@@ -1,0 +1,8 @@
+temp
+website
+/src-generated/org.hl7.fhir.igpublisher.jar
+output
+/src-generated/resources/ig-expansion-parameters.json
+/src-generated/resources/ig-new.json
+/src-generated/resources/ig-new.xml
+/src-generated/resources/ig-validation-parameters.json

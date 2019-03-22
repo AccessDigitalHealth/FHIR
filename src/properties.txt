@@ -1,0 +1,10 @@
+#guidename must match the id of the implementation guide
+guidename=access
+copyrightyear=2019+
+license=CC0-1.0
+version=0.1.0
+ballotstatus=N/A
+fhirspec=http://hl7.org/fhir/R4/
+#excludexml=Yes
+#excludejson=Yes
+#excludettl=Yes
