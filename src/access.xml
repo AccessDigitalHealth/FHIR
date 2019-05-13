@@ -27,6 +27,24 @@
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
         <valueUri value="observation-access-profile-spreadsheet.xml"/>
       </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationDispense-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationDispense-clin-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationRequest-clin-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationRequest-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationStatement-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationStatement-clin-access-profile-spreadsheet.xml"/>
+      </extension>
       <name value="Profiles"/>
       <description value="Constraints on FHIR resources to be adhered to as part of the ACCESS implementation guide"/>
     </grouping>
@@ -34,7 +52,7 @@
       <name value="Extensions"/>
       <description value="Extensions defined as part of the ACCESS implementation guide"/>
     </grouping>-->
-    <resource>
+<!--    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
       </extension>
@@ -43,6 +61,78 @@
       </reference>
       <name value="Lab Observation"/>
       <description value="FHIR Requirements for lab observations."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>-->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationDispense-pat"/>
+      </reference>
+      <name value="Medication Dispense (Patient)"/>
+      <description value="FHIR Requirements for medication dispense information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationDispense-clin"/>
+      </reference>
+      <name value="Medication Dispense (Clinician)"/>
+      <description value="FHIR Requirements for medication dispense information displayed to a clinician."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationRequest-pat"/>
+      </reference>
+      <name value="Medication Request (Patient)"/>
+      <description value="FHIR Requirements for medication request information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationRequest-clin"/>
+      </reference>
+      <name value="Medication Request (Clinician)"/>
+      <description value="FHIR Requirements for medication request information displayed to a clinician."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationStatement-pat"/>
+      </reference>
+      <name value="Medication Statement (Patient)"/>
+      <description value="FHIR Requirements for medication statement information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationStatement-clin"/>
+      </reference>
+      <name value="Medication Statement (Clinician)"/>
+      <description value="FHIR Requirements for medication statement information displayed to a clinician."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
