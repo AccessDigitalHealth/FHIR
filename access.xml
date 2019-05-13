@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
+  <id value="access"/>
+  <url value="http://infoway-inforoute.ca/fhir/ImplementationGuide/access"/>
+  <name value="AccessHealth"/>
+  <title value="Access Health FHIR Requirements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Canada Health Infoway"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://infoway-inforoute.ca"/>
+    </telecom>
+  </contact>
+  <description value="Provides an initial set of FHIR requirements based on mappings of jurisdictional data sources for the Access Health project."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CA"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="ca.infoway-inforoute.access.initial"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="profiles">
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="observation-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationDispense-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationDispense-clin-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationRequest-clin-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationRequest-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationStatement-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="medicationStatement-clin-access-profile-spreadsheet.xml"/>
+      </extension>
+      <name value="Profiles"/>
+      <description value="Constraints on FHIR resources to be adhered to as part of the ACCESS implementation guide"/>
+    </grouping>
+<!--    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions defined as part of the ACCESS implementation guide"/>
+    </grouping>-->
+<!--    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-observation"/>
+      </reference>
+      <name value="Lab Observation"/>
+      <description value="FHIR Requirements for lab observations."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>-->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationDispense-pat"/>
+      </reference>
+      <name value="Medication Dispense (Patient)"/>
+      <description value="FHIR Requirements for medication dispense information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationDispense-clin"/>
+      </reference>
+      <name value="Medication Dispense (Clinician)"/>
+      <description value="FHIR Requirements for medication dispense information displayed to a clinician."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationRequest-pat"/>
+      </reference>
+      <name value="Medication Request (Patient)"/>
+      <description value="FHIR Requirements for medication request information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationRequest-clin"/>
+      </reference>
+      <name value="Medication Request (Clinician)"/>
+      <description value="FHIR Requirements for medication request information displayed to a clinician."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationStatement-pat"/>
+      </reference>
+      <name value="Medication Statement (Patient)"/>
+      <description value="FHIR Requirements for medication statement information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationStatement-clin"/>
+      </reference>
+      <name value="Medication Statement (Clinician)"/>
+      <description value="FHIR Requirements for medication statement information displayed to a clinician."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="ACCESS Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
