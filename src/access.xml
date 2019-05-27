@@ -25,7 +25,7 @@
   <definition>
     <grouping id="profiles">
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="observation-access-profile-spreadsheet.xml"/>
+        <valueUri value="observation-gen-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
         <valueUri value="medicationDispense-pat-access-profile-spreadsheet.xml"/>
@@ -52,18 +52,18 @@
       <name value="Extensions"/>
       <description value="Extensions defined as part of the ACCESS implementation guide"/>
     </grouping>-->
-<!--    <resource>
+      <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-observation"/>
+        <reference value="StructureDefinition/access-observation-gen-pat"/>
       </reference>
-      <name value="Lab Observation"/>
-      <description value="FHIR Requirements for lab observations."/>
+      <name value="General Lab Observation"/>
+      <description value="FHIR Requirements for general lab observation and result information displayed to a citizen/patient."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
-    </resource>-->
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
         <valueBoolean value="true"/>
