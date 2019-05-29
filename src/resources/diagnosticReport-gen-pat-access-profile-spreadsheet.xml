@@ -9,7 +9,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Sheridan Cook</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2019-05-29T17:10:09Z</LastSaved>
+  <LastSaved>2019-05-27T19:59:50Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -18,8 +18,8 @@
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>15560</WindowHeight>
   <WindowWidth>27240</WindowWidth>
-  <WindowTopX>3540</WindowTopX>
-  <WindowTopY>1720</WindowTopY>
+  <WindowTopX>1200</WindowTopX>
+  <WindowTopY>3100</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
@@ -363,12 +363,6 @@
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
   </Style>
-  <Style ss:ID="s103">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
-    ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
-   <Interior/>
-  </Style>
   <Style ss:ID="s104">
    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
     ss:WrapText="1"/>
@@ -380,8 +374,7 @@
   </Style>
   <Style ss:ID="s106">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
-    ss:Bold="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
   </Style>
   <Style ss:ID="s107">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
@@ -394,38 +387,33 @@
    </Borders>
   </Style>
   <Style ss:ID="s109">
-   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
-    ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF6600"/>
   </Style>
   <Style ss:ID="s110">
-   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
   </Style>
   <Style ss:ID="s111">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF0000"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
   </Style>
   <Style ss:ID="s112">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF6600"
-    ss:Bold="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF6600"/>
   </Style>
   <Style ss:ID="s113">
-   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF6600"/>
   </Style>
   <Style ss:ID="s114">
-   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF6600"/>
   </Style>
   <Style ss:ID="s115">
-   <Borders/>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
-    ss:Bold="1"/>
-   <Interior/>
-   <NumberFormat/>
-   <Protection/>
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF0000"/>
   </Style>
   <Style ss:ID="s116">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
@@ -777,11 +765,11 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s71"><Data ss:Type="String">id</Data></Cell>
-    <Cell ss:StyleID="s72"><Data ss:Type="String">access-observation-gen-pat</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">access-diagnosticReport-gen-pat</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">name</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">ACCESS Health Observation (General Labs Patient)</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ACCESS Health Diagnostic (General Labs Patient)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">author.name</Data></Cell>
@@ -798,7 +786,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="69.75">
     <Cell ss:StyleID="s73"><Data ss:Type="String">description</Data></Cell>
-    <Cell ss:StyleID="s77"><Data ss:Type="String">Constraints on the Observation resource to reflect source data mappings for the ACCESS Health project. Focus f this profile is on display of general lab information to citizen/patient viewers.  </Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Constraints on the DiagnosticReport resource to reflect source data mappings for the ACCESS Health project. Focus f this profile is on display of general Diagnostic Report result information to citizen/patient viewers.  </Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">status</Data></Cell>
@@ -810,7 +798,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">published.structure</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">access-observation-gen-pat</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">access-diagnosticReport-gen-pat</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">version</Data></Cell>
@@ -818,8 +806,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s79" ss:HRef="http://infoway-inforoute.ca/fhir/StructureDefinition/access-observation-gen-pat"><Data
-      ss:Type="String">http://infoway-inforoute.ca/fhir/StructureDefinition/access-observation-gen-pat</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticReport-gen-pat"><Data
+      ss:Type="String">http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticReport-gen-pat</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s80"><Data ss:Type="String">introduction</Data></Cell>
@@ -862,19 +850,20 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
+     <ActiveRow>10</ActiveRow>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
  </Worksheet>
- <Worksheet ss:Name="access-observation-gen-pat">
+ <Worksheet ss:Name="access-diagnosticReport-gen-pat">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='access-observation-gen-pat'!R1C1:R19C28" ss:Hidden="1"/>
+    ss:RefersTo="='access-diagnosticReport-gen-pat'!R1C1:R14C28" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="46" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="40" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s84" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s84" ss:AutoFitWidth="0" ss:Width="122"/>
@@ -980,8 +969,9 @@
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Why element/resource is needed or why selected constraints chosen</Font>       </ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s90"><Data ss:Type="String">Comments</Data><Comment
-      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font
-        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Additional notes for implementers</Font>       </ss:Data></Comment><NamedCell
+      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Additional notes for implementers</Font><Font
+        html:Color="#000000">       </Font></ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s90"><Data ss:Type="String">To Do</Data><Comment ss:Author=""><ss:Data
        xmlns="http://www.w3.org/TR/REC-html40">        <Font html:Face="Tahoma"
@@ -1012,11 +1002,11 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="60">
-    <Cell ss:StyleID="s92"><Data ss:Type="String">AccessObservationGeneralLabPatient</Data><NamedCell
+    <Cell ss:StyleID="s92"><Data ss:Type="String">AccessDiagnosticReportGeneralLabPatient</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s94"><Data ss:Type="String">Observation</Data><NamedCell
+    <Cell ss:StyleID="s94"><Data ss:Type="String">DiagnosticReport</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1030,8 +1020,9 @@
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s97"><Data ss:Type="String">Expected requirements for the observation resource when reflecting general lab data based on existing source mappings</Data><NamedCell
+    <Cell ss:StyleID="s95"><Data ss:Type="String">A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s97"><Data ss:Type="String">Expected requirements for the DiagnosticReport resource when reflecting general lab result data based on existing source mappings</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s98"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1050,22 +1041,320 @@
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Observation.identifier</Data><NamedCell
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.identifier</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Identifier</Data><NamedCell
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">Identifier</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Business Identifier for observation</Data><NamedCell
+    <Cell ss:Index="16"><Data ss:Type="String">Business identifier for report</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-21</Font></B><Font
-       html:Color="#000000"> (Observation Instance Identifier)&#10;Other suggested options if OBX-21 is not available: </Font><B><Font
-        html:Color="#000000">OBR-2 </Font></B><Font html:Color="#000000">(Placer Order Number) + </Font><B><Font
-        html:Color="#000000">OBR-3</Font></B><Font html:Color="#000000">(Filler Order Number) + </Font><B><Font
-        html:Color="#000000">OBX-3</Font></B><Font html:Color="#000000"> (Observation Identifier)</Font></ss:Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-51 &#10;Other suggested options if OBR-51 is not available: OBR-2 + OBR-3 + OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-2 + OBR-3 + OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-2 + OBR-3 + OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-2 + OBR-20 + OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-2 + OBR-3 + OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-2 + OBR-3 + OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.status</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">code</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">DRS</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">registered | partial | preliminary | final +</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-25 (not 1:1 mapping)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">OBR-25 (Codes supported: P, F, C, D, A*, FOUT*)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-25 (Codes supported: P, F, D, A*)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-25 (Codes supported: P, F, C)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-25 (Codes supported: P, F, C, N, W, X, Z)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-25 (Codes supported: P, F, C, D, R, S, D, U, I)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.category</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">1..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">DSSC</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Service Category</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Laboratory should be the default code used in this diagnostic report profile. Other profiles may support other codes. </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">OBR-24</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">OBR-24</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">OBR-24</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">OBR-24</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">?</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">OBR-24</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.code</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">LDRC</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Name/Code for this diagnostic report</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-4 (HL7 v2 doesn't provide an easy way to indicate both the ordered test and the performed panel)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.subject</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">1..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s110"><Data ss:Type="String">Reference(Patient){http://hl7.org/fhir/ca/core/StructureDefinition/profile-patient}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">The subject of the report</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">PID-3 &#10;Other suggested options if PID-3 is not available or the patient resource is tied to provincial identifiers: PID-2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.effective</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Clinically relevant time/time-period for report</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-7 (Observation Date/Time)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.effectiveDateTime</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">dateTime</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">A date, date-time or partial date (e.g. just year or year + month) as used in human communication.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-7 (Observation Date/Time)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.issued</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">instant</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">DateTime this version was made</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">OBR-22 (Results Rpt/Status Chng – Date/Time)&#10;Other suggested options if OBR-22 is not available: OBR-7 or OBX-19 can be used if interface is HL7 v2.4 or higher</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s112"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">OBR-22</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">OBR-22</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">ZBX-1 (Test Result Release Date/Time)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-22</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.performer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s110"><Data ss:Type="String">Reference(Organization){http://hl7.org/fhir/ca/core/StructureDefinition/profile-organization}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Responsible Diagnostic Service</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-15 (Producer ID), OBX-23 (Performing Organization Name) if interface is HL7 2.5.1 and higher&#10;.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">OBX-15</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ZPS-2 (Meditech performing lab site mnemonic) / ZPS-3 (Meditech performing lab site name)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s112"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">ZBR-6 (Performing Laboratory)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-23</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.specimen</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">Reference(Specimen)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Specimens this report is based on</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-3.1 (Filler Order Number ID) SPM-2 (Specimen ID) can be used in interfaces that are HL7 v2.5.1 and higher</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-3.1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-3.1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-20 (Filler Field 1+ Unformatted Millennium accession number)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">OBR-3.1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">SPM-2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.result</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">Reference(Observation){http://infoway-inforoute.ca/fhir/StructureDefinition/access-observation-gen-pat}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Observations</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-21 (Observation Instance Identifier)&#10;Other suggested options if OBX-21 is not available: OBR-2 (Placer Order Number) + OBR-3(Filler Order Number) + OBX-3 (Observation Identifier)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-3.1 + OBR-4.1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1084,534 +1373,68 @@
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.partOf </Data><NamedCell
+    <Cell ss:StyleID="s113"><Data ss:Type="String">DiagnosticReport.media</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Reference(Procedure)</Data><NamedCell
+    <Cell ss:Index="8"><Data ss:Type="String">BackboneElement</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Part of referenced event</Data><NamedCell
+    <Cell ss:StyleID="s114"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Key images associated with this report</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-26 + OBR-29 </Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-5.5 (in situations where OBX-2 Data type is ED)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3.1 + OBX-4.1  + OBR-2.1 + OBR-3.1</Data><NamedCell
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-5.5 (in situations where OBX-2 Data type is ED)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">not supported</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR 2 + OBX 3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-26 + OBR-29</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s110"><Data ss:Type="String">OBR-26 + OBR-29 </Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-5.5 (in situations where OBX-2 Data type is ED)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.status</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">code</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OS</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">registered | preliminary | final | amended +</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-11</Font></B><Font
-       html:Color="#000000"> (Observation Result Status)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OBX-11 (Codes supported: P, F, C, D, A*, FOUT*)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11 (Codes supported: P, F, D, A*)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11 (Codes supported: P, F, C)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11 (Codes supported: P, F, C, N, W, X, Z)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11 (Codes upported: P, F, C, D, R, S, D, U, I)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s113"><Data ss:Type="String">DiagnosticReport.conclusion</Data></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Clinical conclusion (interpretation) of test results</Data></Cell>
+    <Cell ss:Index="21" ss:StyleID="s112"><Data ss:Type="String">OBX? Or NTE-3 when NTE-2 data type is interpretive data</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.category</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="6"><Data ss:Type="String">1..*</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">CodeableConcept</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OCC</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Classification of type of observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">Laboratory should be the default code used in this general lab profile. Other profiles may support other codes. </Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s65"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="23" ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.code</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">CodeableConcept</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">LC</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Type of observation (code / type)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-3.1</Font></B><Font
-       html:Color="#000000"> (Observation Identifier ID/Print Number)&#10;Other suggested options if OBX-3 is not available: </Font><B><Font
-        html:Color="#000000">OBR-4 </Font></B><Font html:Color="#000000">(Universal Service Identifier)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-3.1 (Code set 72 with some ability to send LOINC if site selects &quot;send nomenclature identifier&quot;)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.subject</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="6"><Data ss:Type="String">1..1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Reference(Patient){http://hl7.org/fhir/ca/core/StructureDefinition/profile-patient}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Who and/or what the observation is about</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">PID-3 </Font></B><Font
-       html:Color="#000000">(Patient Identifier List)  Other suggested options if PID-3 is not available or the patient resource is tied to provincial identifiers: </Font><B><Font
-        html:Color="#000000">PID-2</Font></B></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">PID-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.effective[x]</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">dateTime|Period|instant</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Clinically relevant time/time-period for observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-14</Font></B><Font
-       html:Color="#000000"> (Date/Time of the Observation) Other suggested options if OBX-14 is not available: </Font><B><Font
-        html:Color="#000000">OBR-7</Font></B></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-14 &#10;&#10;Other suggested options if OBX-14 is not available: OBR-7</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-14 &#10;&#10;Other suggested options if OBX-14 is not available: OBR-7</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-14 &#10;&#10;Other suggested options if OBX-14 is not available: OBR-7</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-14 &#10;&#10;Other suggested options if OBX-14 is not available: OBR-7</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s111"><Data ss:Type="String">OBX-14 or OBR-7</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.issued</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">instant</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Date/Time this version was made available</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBR-22</Font></B><Font
-       html:Color="#000000"> (Results Rpt/Status Chng - Date/Time +)&#10;&#10;Other suggested options if OBR-22 is not available: </Font><B><Font
-        html:Color="#000000">OBR-7</Font></B><Font html:Color="#000000"> or</Font><B><Font
-        html:Color="#000000"> OBX-19 </Font></B><Font html:Color="#000000">(if LIS is HL7 v2.4 or higher)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-22&#10;&#10;Other suggested options if OBR-22 is not available: OBR-7 or OBX-19 (if LIS is HL7 v2.4 or higher)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-22&#10;&#10;Other suggested options if OBR-22 is not available: OBR-7 or OBX-19 (if LIS is HL7 v2.4 or higher)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-22&#10;&#10;Other suggested options if OBR-22 is not available: OBR-7 or OBX-19 (if LIS is HL7 v2.4 or higher)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-7 (Observation Date/Time #)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-22</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">profile</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.performer</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Reference(Practitioner | Organization)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Who is responsible for the observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="27" ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.performer.practitioner</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Reference(Practitioner){http://hl7.org/fhir/ca/core/StructureDefinition/profile-practitioner}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Practitioner responsible for the observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s112"><Data ss:Type="String">OBR-32 (Principal Result Interpreter) or OBX-16 (Responsible Observer)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">?</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">?</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s114"><Data ss:Type="String">OBX-16 (not sent for all results)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">?</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-32</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.performer.organization</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Reference(Organization){http://hl7.org/fhir/ca/core/StructureDefinition/profile-organization}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Organization responsible for the observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-23 </Font></B><Font
-       html:Color="#000000">(when v2.5.1 or higher),</Font><B><Font
-        html:Color="#000000"> OBX-15</Font></B><Font html:Color="#000000"> (Producer's ID)  if supported, otherwise Z segments </Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">ZPS-2</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">OBX-15</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">ZBR-6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.value[x]</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Quantity|CodeableConcept|string|boolean|integer|Range|Ratio|SampledData|time|dateTime|Period</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Actual result</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX.2 </Font></B><Font
-       html:Color="#000000">(Value Type), </Font><B><Font html:Color="#000000">OBX.5</Font></B><Font
-       html:Color="#000000"> (Observation Value), </Font><B><Font
-        html:Color="#000000">OBX.6 </Font></B><Font html:Color="#000000">(Units)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX.2, OBX.5, OBX.6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX.2, OBX.5, OBX.6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX.2, OBX.5, OBX.6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX.2, OBX.5, OBX.6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX.2, OBX.5, OBX.6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.dataAbsentReason</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">CodeableConcept</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">DAR</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Why the result is missing</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-11* </Font></B><Font
-       html:Color="#000000">(Observation Result Status)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11*</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11*</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">None</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11*</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-11*</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.interpretation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OI</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Codes signifying whether result is high, low, normal, compared to reference range</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s115"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-8 </Font></B><Font
-       html:Color="#000000">(Interpretation Codes)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OBX-8</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OBX-8</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OBX-8</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OBX-8</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">OBX-8</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.note</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">Annotation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Comments about the observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">NTE-3 </Font></B><Font
-       html:Color="#000000">(Comment)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">NTE-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">NTE-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">NTE-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">NTE-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">NTE-3</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Observation.method</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="10"><Data ss:Type="String">OM</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">How the observation was done</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-17.2 </Font></B><Font
-       html:Color="#000000">(Observation Method Text)</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">None</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">None</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-17.2</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-17.2</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s111"><Data ss:Type="String">OBX-17.2 or OBR-15.6</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Observation.specimen</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">Reference(Specimen)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Specimen used for this observation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBR-3.1</Font></B><Font
-       html:Color="#000000"> (Filler Order Number ID) </Font><B><Font
-        html:Color="#000000">SPM-2 </Font></B><Font html:Color="#000000">(Specimen ID) can be used in interfaces that are HL7 v2.5.1 and higher</Font></ss:Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBR-20 (Filler Field 1+..Unformatted Millennium accension number)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s111"><Data ss:Type="String">OBR-3.1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">SPM-2</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="4"><Data ss:Type="String">Observation.referenceRange</Data></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">BackboneElement</Data></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String">Provides guide for interpretation</Data></Cell>
-    <Cell ss:Index="21" ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-7 </Font></B><Font
-       html:Color="#000000">(Reference Range)</Font></ss:Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Observation.referenceRange.appliesTo</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s113"><Data ss:Type="String">DiagnosticReport.conclusionCode</Data></Cell>
     <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data></Cell>
-    <Cell ss:Index="10"><Data ss:Type="String">ORRAP</Data></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String"> Reference range population</Data></Cell>
-    <Cell ss:Index="21" ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-10</Font></B><Font
-       html:Color="#000000"> (Nature of Abnormal Test)</Font></ss:Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-10</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String"> </Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String"> </Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-10</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-10</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="String">SCTCF</Data></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Codes for the clinical conclusion of test results</Data></Cell>
+    <Cell ss:Index="21" ss:StyleID="s112"><Data ss:Type="String">OBX?</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="4"><Data ss:Type="String">Observation.referenceRange.text</Data></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">string</Data></Cell>
-    <Cell ss:Index="16"><Data ss:Type="String"> Text based reference range in an observation</Data></Cell>
-    <Cell ss:Index="21" ss:StyleID="s106"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-7 </Font></B><Font
-       html:Color="#000000">(Reference Range)</Font></ss:Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">OBX-7</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s113"><Data ss:Type="String">DiagnosticReport.presentedForm</Data></Cell>
+    <Cell ss:Index="8" ss:StyleID="Default"><Data ss:Type="String">Attachment</Data></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Entire report as issued</Data></Cell>
+    <Cell ss:Index="21" ss:StyleID="s109"><Data ss:Type="String">OBX?</Data></Cell>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-5.5 (in situations where OBX-2 Data type is ED)</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">OBX-5.5 (in situations where OBX-2 Data type is ED)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s65"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
@@ -1620,6 +1443,8 @@
     <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s65"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
@@ -1628,69 +1453,32 @@
     <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s65"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s105"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s105"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s105"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s105"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s105"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s105"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="21" ss:StyleID="s105"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
-    <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s105"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s111"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
-    <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s105"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s107"/>
-    <Cell ss:StyleID="s111"/>
-    <Cell ss:StyleID="s107"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
+    <Cell ss:Index="21" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:Index="21" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s105"/>
     <Cell ss:StyleID="s107"/>
@@ -1702,6 +1490,45 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
+    <Cell ss:Index="21" ss:StyleID="s105"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:Index="21" ss:StyleID="s105"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s115"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:Index="21" ss:StyleID="s105"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:Index="21" ss:StyleID="s105"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
     <Cell ss:Index="21" ss:StyleID="s116"/>
     <Cell ss:StyleID="s107"/>
@@ -1713,7 +1540,6 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
-    <Cell ss:StyleID="s84"/>
     <Cell ss:Index="22" ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
@@ -1722,7 +1548,6 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s84"/>
-    <Cell ss:StyleID="s84"/>
     <Cell ss:StyleID="s84"/>
     <Cell ss:Index="22" ss:StyleID="s107"/>
     <Cell ss:StyleID="s107"/>
@@ -1829,7 +1654,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <LeftColumnRightPane>6</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1844,14 +1669,14 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>9</ActiveRow>
-     <ActiveCol>6</ActiveCol>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>8</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
-  <AutoFilter x:Range="R1C1:R19C28"
+  <AutoFilter x:Range="R1C1:R14C28"
    xmlns="urn:schemas-microsoft-com:office:excel">
   </AutoFilter>
  </Worksheet>
@@ -5761,7 +5586,7 @@
    <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=Bindings!R1C1:R1C13"
     ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="13" ss:ExpandedRowCount="25" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="13" ss:ExpandedRowCount="18" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s107" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s107" ss:Width="115"/>
@@ -5832,94 +5657,43 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"><Data ss:Type="String">OCC</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Category Codes</Data></Cell>
-    <Cell><Data ss:Type="String">value set</Data></Cell>
-    <Cell><Data ss:Type="String">Preferred</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/observation-category"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/observation-category</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Category Codes</Data></Cell>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">DAR</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Data Absent Reason</Data></Cell>
-    <Cell><Data ss:Type="String">value set</Data></Cell>
-    <Cell><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/data-absent-reason"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/data-absent-reason</Data></Cell>
-    <Cell><Data ss:Type="String">Used to specify why the normally expected content of the data element is missing.</Data></Cell>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">OI</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Interpretation</Data></Cell>
-    <Cell><Data ss:Type="String">value set</Data></Cell>
-    <Cell><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/observation-interpretation"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/observation-interpretation</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Interpretation Codes</Data></Cell>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">OS</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Status</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">DRS</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Diagnostic Report Status</Data></Cell>
     <Cell><Data ss:Type="String">value set</Data></Cell>
     <Cell><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/observation-status"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/observation-status</Data></Cell>
-    <Cell><Data ss:Type="String">Codes providing the status of an observation.</Data></Cell>
+    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/diagnostic-report-status"><Data
+      ss:Type="String">http://hl7.org/fhir/ValueSet/diagnostic-report-status</Data></Cell>
+    <Cell><Data ss:Type="String">The status of the diagnostic report.</Data></Cell>
     <Cell ss:Index="13" ss:StyleID="s128"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">LC</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">LOINC Codes</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">DSSC</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Diagnostic Service Section Codes</Data></Cell>
     <Cell><Data ss:Type="String">value set</Data></Cell>
     <Cell><Data ss:Type="String">example</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/observation-codes"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/observation-codes</Data></Cell>
-    <Cell><Data ss:Type="String">Value set containing all LOINC codes</Data></Cell>
+    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/diagnostic-service-sections"><Data
+      ss:Type="String">http://hl7.org/fhir/ValueSet/diagnostic-service-sections</Data></Cell>
+    <Cell><Data ss:Type="String">This value set includes all the codes in HL7 V2 table 0074.</Data></Cell>
     <Cell ss:Index="13" ss:StyleID="s128"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">OM</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Methods</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">LDRC</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">LOINC Diagnostic Report Codes</Data></Cell>
+    <Cell><Data ss:Type="String">value set</Data></Cell>
+    <Cell><Data ss:Type="String">preferred</Data></Cell>
+    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/report-codes"><Data
+      ss:Type="String">http://hl7.org/fhir/ValueSet/report-codes</Data></Cell>
+    <Cell><Data ss:Type="String">This value set includes LOINC codes that relate to Diagnostic Observations.</Data></Cell>
+    <Cell ss:Index="13" ss:StyleID="s128"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">SCTCF</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">SNOMED CT Clinical Findings</Data></Cell>
     <Cell><Data ss:Type="String">value set</Data></Cell>
     <Cell><Data ss:Type="String">example</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/observation-methods"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/observation-methods</Data></Cell>
-    <Cell><Data ss:Type="String">Observation Methods</Data></Cell>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">ORRAP</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Reference Range Applies To Codes</Data></Cell>
-    <Cell><Data ss:Type="String">value set</Data></Cell>
-    <Cell><Data ss:Type="String">example</Data></Cell>
-    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/referencerange-appliesto"><Data
-      ss:Type="String">http://hl7.org/fhir/ValueSet/referencerange-appliesto</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Observation Reference Range Applies To Codes</Data></Cell>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s84"/>
-    <Cell ss:Index="5" ss:StyleID="s146"/>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s84"/>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s84"/>
-    <Cell ss:Index="13" ss:StyleID="s128"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s147"/>
-    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s146" ss:HRef="http://hl7.org/fhir/ValueSet/clinical-findings"><Data
+      ss:Type="String">http://hl7.org/fhir/ValueSet/clinical-findings</Data></Cell>
+    <Cell><Data ss:Type="String">This value set includes all the &quot;Clinical finding&quot; SNOMED CT  codes - concepts where concept is-a 404684003 (Clinical finding (finding)).</Data></Cell>
     <Cell ss:Index="13" ss:StyleID="s128"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -6025,8 +5799,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>7</ActiveRow>
-     <ActiveCol>5</ActiveCol>
+     <ActiveRow>21</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
