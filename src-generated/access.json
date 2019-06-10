@@ -98,10 +98,31 @@
   "canonicalBase": "http://infoway-inforoute.ca/fhir",
   "source": "access.xml",
   "spreadsheets": [
-    "observation-access-profile-spreadsheet.xml"
+    "observation-gen-pat-access-profile-spreadsheet.xml",
+    "diagnosticReport-gen-pat-access-profile-spreadsheet.xml",
+    "medicationDispense-pat-access-profile-spreadsheet.xml",
+    "medicationDispense-clin-access-profile-spreadsheet.xml",
+    "medicationRequest-clin-access-profile-spreadsheet.xml",
+    "medicationRequest-pat-access-profile-spreadsheet.xml",
+    "medicationStatement-pat-access-profile-spreadsheet.xml",
+    "medicationStatement-clin-access-profile-spreadsheet.xml"
   ],
   "resources": {
-    "StructureDefinition/access-observation":{
+    "StructureDefinition/access-observation-gen-pat":{
+    },
+    "StructureDefinition/access-diagnosticReport-gen-pat":{
+    },
+    "StructureDefinition/access-medicationDispense-pat":{
+    },
+    "StructureDefinition/access-medicationDispense-clin":{
+    },
+    "StructureDefinition/access-medicationRequest-pat":{
+    },
+    "StructureDefinition/access-medicationRequest-clin":{
+    },
+    "StructureDefinition/access-medicationStatement-pat":{
+    },
+    "StructureDefinition/access-medicationStatement-clin":{
     }
   }
 }

@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>15560</WindowHeight>
+  <WindowHeight>15620</WindowHeight>
   <WindowWidth>27240</WindowWidth>
-  <WindowTopX>3540</WindowTopX>
-  <WindowTopY>1720</WindowTopY>
+  <WindowTopX>1560</WindowTopX>
+  <WindowTopY>1040</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
@@ -1213,6 +1213,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="8" ss:StyleID="s103"><Data ss:Type="String">Reference(Patient){http://hl7.org/fhir/ca/core/StructureDefinition/profile-patient}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="16"><Data ss:Type="String">Who and/or what the observation is about</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1844,8 +1845,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>9</ActiveRow>
-     <ActiveCol>6</ActiveCol>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>8</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
