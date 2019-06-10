@@ -28,6 +28,9 @@
         <valueUri value="observation-gen-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
+        <valueUri value="diagnosticReport-gen-pat-access-profile-spreadsheet.xml"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
         <valueUri value="medicationDispense-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
@@ -61,6 +64,18 @@
       </reference>
       <name value="General Lab Observation"/>
       <description value="FHIR Requirements for general lab observation and result information displayed to a citizen/patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="profiles"/>
+    </resource>
+      <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-spreadsheet-profile">
+        <valueBoolean value="true"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-diagnosticReport-gen-pat"/>
+      </reference>
+      <name value="General Lab DiagnosticReport"/>
+      <description value="FHIR Requirements for general lab DiagnosticReport information displayed to a citizen/patient."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
