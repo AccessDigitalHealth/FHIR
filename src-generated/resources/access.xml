@@ -61,6 +61,14 @@
             <description value="Constraints on FHIR resources to be adhered to as part of the ACCESS implementation guide"/>
                 
         </grouping>
+            
+        <grouping id="examples">
+                  
+            <name value="Example(s)"/>
+                  
+            <description value="Example(s) showing the use of the ACCESS profiles"/>
+                
+        </grouping>
         
         <!--    <grouping id="extensions">
       <name value="Extensions"/>
@@ -75,6 +83,16 @@
     
     
     
+        <!--<resource>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-general-lab-profile-example"/>
+      </reference>
+      <name value="ACCESS-DiagnosticReport"/>
+      <description value="FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile "/>
+      <exampleCanonical value="StructureDefinition/access-diagnosticReport-gen-pat"/>
+      <groupingId value="examples"/>
+    </resource>-->
+            
         <page>
                   
             <nameUrl value="toc.html"/>
