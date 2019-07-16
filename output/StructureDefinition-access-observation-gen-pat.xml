@@ -19,7 +19,7 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.dataAbsentReason">dataAbsentReason</a><a name="Observation.dataAbsentReason"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Why the result is missing<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.interpretation">interpretation</a><a name="Observation.interpretation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codes signifying whether result is high, low, normal, compared to reference range<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.note">note</a><a name="Observation.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Comments about the observation</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.specimen:Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available" title="Slice Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available: ">specimen</a><a name="Observation.specimen"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen used for this observation</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.specimen">specimen</a><a name="Observation.specimen"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen used for this observation</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.referenceRange">referenceRange</a><a name="Observation.referenceRange"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.referenceRange.appliesTo">appliesTo</a><a name="Observation.referenceRange.appliesTo"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference range population<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/v2/0080/index.html">v2 NATURE OF ABNORMAL TESTING</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>)</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#Observation.referenceRange.text">text</a><a name="Observation.referenceRange.text"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text based reference range in an observation</td></tr>
@@ -38,7 +38,7 @@
       <value value="http://infoway-inforoute.ca"/>
     </telecom>
   </contact>
-  <description value="Constraints on the Observation resource to reflect source data mappings for the ACCESS Health project. Focus f this profile is on display of general lab information to citizen/patient viewers."/>
+  <description value="Constraints on the Observation resource to reflect source data mappings for the ACCESS Health project. Focus of this profile is on display of general lab information to citizen/patient viewers."/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="vendor-agnostic-v2"/>
@@ -110,7 +110,7 @@
       <path value="Observation"/>
       <short value="Measurements and simple assertions"/>
       <definition value="Expected requirements for the observation resource when reflecting general lab data based on existing source mappings."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <comment value="Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -536,16 +536,8 @@
         <map value="OBR-26 + OBR-29"/>
       </mapping>
       <mapping>
-        <identity value="nova-scotia--meditech-magic"/>
-        <map value="not supported"/>
-      </mapping>
-      <mapping>
         <identity value="nove-scotia--cerner-millennium"/>
-        <map value="OBR 2 + OBX 3"/>
-      </mapping>
-      <mapping>
-        <identity value="nova-scotia--meditech-c/s"/>
-        <map value="OBX-3.1 + OBX-4.1  + OBR-2.1 + OBR-3.1"/>
+        <map value="OBR-26 + OBR-29"/>
       </mapping>
     </element>
     <element id="Observation.status">
@@ -778,7 +770,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="PID-3"/>
+        <map value="PID-3 (if v2.3.1 and above), PID-4 (if v2.3 or below)"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -914,7 +906,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="OBX-14 or OBR-7"/>
+        <map value="OBX-14"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -965,7 +957,7 @@
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
-        <map value="OBR-7 (Observation Date/Time #)"/>
+        <map value="OBR-7"/>
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
@@ -981,7 +973,7 @@
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-c/s"/>
-        <map value="OBR-22&#xA;&#xA;Other suggested options if OBR-22 is not available: OBR-7 or OBX-19 (if LIS is HL7 v2.4 or higher)"/>
+        <map value="OBR-7"/>
       </mapping>
     </element>
     <element id="Observation.performer">
@@ -1372,9 +1364,8 @@
         <map value="methodCode"/>
       </mapping>
     </element>
-    <element id="Observation.specimen:Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available">
+    <element id="Observation.specimen">
       <path value="Observation.specimen"/>
-      <sliceName value="Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available"/>
       <short value="Specimen used for this observation"/>
       <definition value="The specimen that was used when this observation was made."/>
       <comment value="Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report)."/>
@@ -1410,7 +1401,7 @@
       </mapping>
       <mapping>
         <identity value="vendor-agnostic-v2"/>
-        <map value="OBR-3.1 (Filler Order Number ID) SPM-2 (Specimen ID) can be used in interfaces that are HL7 v2.5.1 and higher"/>
+        <map value="OBR-3.1 (Filler Order Number ID) , SPM-2 (Specimen ID) can be used in interfaces that are HL7 v2.5.1 and higher"/>
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
@@ -2215,6 +2206,7 @@
     <element id="Observation">
       <path value="Observation"/>
       <definition value="Expected requirements for the observation resource when reflecting general lab data based on existing source mappings."/>
+      <comment value="Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
@@ -2273,16 +2265,8 @@
         <map value="OBR-26 + OBR-29"/>
       </mapping>
       <mapping>
-        <identity value="nova-scotia--meditech-magic"/>
-        <map value="not supported"/>
-      </mapping>
-      <mapping>
         <identity value="nove-scotia--cerner-millennium"/>
-        <map value="OBR 2 + OBX 3"/>
-      </mapping>
-      <mapping>
-        <identity value="nova-scotia--meditech-c/s"/>
-        <map value="OBX-3.1 + OBX-4.1  + OBR-2.1 + OBR-3.1"/>
+        <map value="OBR-26 + OBR-29"/>
       </mapping>
     </element>
     <element id="Observation.status">
@@ -2399,7 +2383,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="PID-3"/>
+        <map value="PID-3 (if v2.3.1 and above), PID-4 (if v2.3 or below)"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -2432,7 +2416,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="OBX-14 or OBR-7"/>
+        <map value="OBX-14"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -2458,7 +2442,7 @@
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
-        <map value="OBR-7 (Observation Date/Time #)"/>
+        <map value="OBR-7"/>
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
@@ -2474,7 +2458,7 @@
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-c/s"/>
-        <map value="OBR-22&#xA;&#xA;Other suggested options if OBR-22 is not available: OBR-7 or OBX-19 (if LIS is HL7 v2.4 or higher)"/>
+        <map value="OBR-7"/>
       </mapping>
     </element>
     <element id="Observation.performer">
@@ -2509,24 +2493,12 @@
         <map value="OBR-32 (Principal Result Interpreter) or OBX-16 (Responsible Observer)"/>
       </mapping>
       <mapping>
-        <identity value="ontario--olis"/>
-        <map value="?"/>
-      </mapping>
-      <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
         <map value="OBR-32"/>
       </mapping>
       <mapping>
-        <identity value="nova-scotia--meditech-magic"/>
-        <map value="?"/>
-      </mapping>
-      <mapping>
         <identity value="nove-scotia--cerner-millennium"/>
         <map value="OBX-16 (not sent for all results)"/>
-      </mapping>
-      <mapping>
-        <identity value="nova-scotia--meditech-c/s"/>
-        <map value="?"/>
       </mapping>
     </element>
     <element id="Observation.performer.organization">
@@ -2547,11 +2519,15 @@
         <map value="ZBR-6"/>
       </mapping>
       <mapping>
+        <identity value="prince-edward-island--cerner-millennium"/>
+        <map value="OBX-23"/>
+      </mapping>
+      <mapping>
         <identity value="nova-scotia--meditech-magic"/>
         <map value="ZPS-2"/>
       </mapping>
       <mapping>
-        <identity value="nove-scotia--cerner-millennium"/>
+        <identity value="nova-scotia--meditech-c/s"/>
         <map value="OBX-15"/>
       </mapping>
     </element>
@@ -2727,9 +2703,8 @@
         <map value="NTE-3"/>
       </mapping>
     </element>
-    <element id="Observation.specimen:Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available">
+    <element id="Observation.specimen">
       <path value="Observation.specimen"/>
-      <sliceName value="Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available"/>
       <short value="Specimen used for this observation"/>
       <type>
         <code value="Reference"/>
@@ -2739,7 +2714,7 @@
       <isModifier value="false"/>
       <mapping>
         <identity value="vendor-agnostic-v2"/>
-        <map value="OBR-3.1 (Filler Order Number ID) SPM-2 (Specimen ID) can be used in interfaces that are HL7 v2.5.1 and higher"/>
+        <map value="OBR-3.1 (Filler Order Number ID) , SPM-2 (Specimen ID) can be used in interfaces that are HL7 v2.5.1 and higher"/>
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
