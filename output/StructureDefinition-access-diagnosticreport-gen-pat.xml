@@ -11,7 +11,9 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.subject">subject</a><a name="DiagnosticReport.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(http://hl7.org/fhir/ca/core/StructureDefinition/profile-patient)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The subject of the report</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.effectiveDateTime">effectiveDateTime</a><a name="DiagnosticReport.effectiveDateTime"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Clinically relevant time/time-period for report</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.issued">issued</a><a name="DiagnosticReport.issued"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DateTime this version was made</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.performer">performer</a><a name="DiagnosticReport.performer"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(http://hl7.org/fhir/ca/core/StructureDefinition/profile-organization)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Responsible Diagnostic Service</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic" href="{{[id]}}-definitions.html#DiagnosticReport.performer">performer</a><a name="DiagnosticReport.performer"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="font-style: italic" href="http://hl7.org/fhir/R4/references.html">Reference</a><span style="font-style: italic">(</span><a style="font-style: italic" href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a><span style="font-style: italic"> | </span><a style="font-style: italic" href="http://hl7.org/fhir/R4/organization.html">Organization</a><span style="font-style: italic">)</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Responsible Diagnostic Service</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:profile</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck130.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.performer.practitioner">practitioner</a><a name="DiagnosticReport.performer.practitioner"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(http://hl7.org/fhir/ca/core/StructureDefinition/profile-practitioner)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Practitioner responsible for the diagnostic report</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck120.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.performer.organization">organization</a><a name="DiagnosticReport.performer.organization"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(http://hl7.org/fhir/ca/core/StructureDefinition/profile-organization)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organization responsible for the diagnostic report</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.specimen">specimen</a><a name="DiagnosticReport.specimen"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimens this report is based on</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.result">result</a><a name="DiagnosticReport.result"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="access-observation-gen-pat.html">AccessObservationGeneralLabPatient</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Observations</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="{{[id]}}-definitions.html#DiagnosticReport.conclusion">conclusion</a><a name="DiagnosticReport.conclusion"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Clinical conclusion (interpretation) of test results</td></tr>
@@ -32,7 +34,7 @@
       <value value="http://infoway-inforoute.ca"/>
     </telecom>
   </contact>
-  <description value="Constraints on the DiagnosticReport resource to reflect source data mappings for the ACCESS Health project. Focus f this profile is on display of general Diagnostic Report result information to citizen/patient viewers."/>
+  <description value="Constraints on the DiagnosticReport resource to reflect source data mappings for the ACCESS Health project. Focus of this profile is on display of general Diagnostic Report result information to citizen/patient viewers."/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="vendor-agnostic-v2"/>
@@ -94,7 +96,7 @@
       <path value="DiagnosticReport"/>
       <short value="A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports"/>
       <definition value="Expected requirements for the DiagnosticReport resource when reflecting general lab result data based on existing source mappings."/>
-      <comment value="This is intended to capture a single report and is not suitable for use in displaying summary information that covers multiple reports.  For example, this resource has not been designed for laboratory cumulative reporting formats nor detailed structured reports for sequencing."/>
+      <comment value="Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available."/>
       <alias value="Report"/>
       <alias value="Test"/>
       <alias value="Result"/>
@@ -511,7 +513,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="OBR-25 (Codes supported: P, F, C, D, R, S, D, U, I)"/>
+        <map value="OBR-25 (Codes supported: P, F, C, D, R, S, D, U, I) Could also receive codes from Cerner Millennium Code Set 8 (UNAUTH, TRANSCRIBED, C_TRANSCRIBED, INPROGRESS, AUTH, ALTERED, MODIFIED, INERROR, INERRNOMUT, INERRNOVIEW, CANCELLED, NOT DONE)"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -696,7 +698,7 @@
       </mapping>
       <mapping>
         <identity value="vendor-agnostic-v2"/>
-        <map value="PID-3(MRN) , PID-2 (primary insurance policy number) should also be considered&#xA;Other suggested options if PID-3 is not available or the patient resource is tied to provincial identifiers: PID-2"/>
+        <map value="PID-3(MRN) , PID-2 (primary insurance policy number) should also be considered&#xA;Other suggested options if PID-3 is not available or the patient resource is tied to provincial identifiers: PID-2 OR PID-4 (Depending on if HL7 v2.3 or lower)"/>
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
@@ -704,7 +706,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="PID-3"/>
+        <map value="PID-3 (if v2.3.1 and above), PID-4 (if v2.3 or below)"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -876,6 +878,13 @@
     </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="profile"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
       <short value="Responsible Diagnostic Service"/>
       <definition value="The diagnostic service that is responsible for issuing the report."/>
       <comment value="This is not necessarily the source of the atomic data items or the entity that interpreted the results. It is the entity that takes responsibility for the clinical report."/>
@@ -896,7 +905,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/ca/core/StructureDefinition/profile-organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -916,26 +926,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=PRF]"/>
-      </mapping>
-      <mapping>
-        <identity value="vendor-agnostic-v2"/>
-        <map value="OBX-15 (Producer ID), OBX-23 (Performing Organization Name) if interface is HL7 2.5.1 and higher&#xA;."/>
-      </mapping>
-      <mapping>
-        <identity value="ontario--olis"/>
-        <map value="ZBR-6 (Performing Laboratory)"/>
-      </mapping>
-      <mapping>
-        <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="OBX-23"/>
-      </mapping>
-      <mapping>
-        <identity value="nova-scotia--meditech-magic"/>
-        <map value="ZPS-2 (Meditech performing lab site mnemonic) / ZPS-3 (Meditech performing lab site name)"/>
-      </mapping>
-      <mapping>
-        <identity value="nova-scotia--meditech-c/s"/>
-        <map value="OBX-15"/>
       </mapping>
     </element>
     <element id="DiagnosticReport.resultsInterpreter">
@@ -1017,7 +1007,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="SPM-2"/>
+        <map value="SPM-2.2"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -1372,6 +1362,7 @@
       <path value="DiagnosticReport"/>
       <short value="A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports"/>
       <definition value="Expected requirements for the DiagnosticReport resource when reflecting general lab result data based on existing source mappings."/>
+      <comment value="Note for implementors: This profile focuses on general lab results. It excludes pathology, microbiology, serotology, etc for two reasons: 1) The density and content of information in the various lab types are dramatically different from each other, these differences drive different information and interaction requirements from patients, and 2) there is a large degree of variance in how general lab results are formatted (more structured) and how other types of labs like pathology are structured (largely text based).   Additional analysis required for microbiology, serotology,  and pathology lab result types to determine level of structured data available."/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
@@ -1431,7 +1422,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="OBR-25 (Codes supported: P, F, C, D, R, S, D, U, I)"/>
+        <map value="OBR-25 (Codes supported: P, F, C, D, R, S, D, U, I) Could also receive codes from Cerner Millennium Code Set 8 (UNAUTH, TRANSCRIBED, C_TRANSCRIBED, INPROGRESS, AUTH, ALTERED, MODIFIED, INERROR, INERRNOMUT, INERRNOVIEW, CANCELLED, NOT DONE)"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -1538,7 +1529,7 @@
       <isModifier value="false"/>
       <mapping>
         <identity value="vendor-agnostic-v2"/>
-        <map value="PID-3(MRN) , PID-2 (primary insurance policy number) should also be considered&#xA;Other suggested options if PID-3 is not available or the patient resource is tied to provincial identifiers: PID-2"/>
+        <map value="PID-3(MRN) , PID-2 (primary insurance policy number) should also be considered&#xA;Other suggested options if PID-3 is not available or the patient resource is tied to provincial identifiers: PID-2 OR PID-4 (Depending on if HL7 v2.3 or lower)"/>
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
@@ -1546,7 +1537,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="PID-3"/>
+        <map value="PID-3 (if v2.3.1 and above), PID-4 (if v2.3 or below)"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
@@ -1622,16 +1613,58 @@
     </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="profile"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
       <short value="Responsible Diagnostic Service"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="DiagnosticReport.performer.practitioner">
+      <path value="DiagnosticReport.performer.practitioner"/>
+      <short value="Practitioner responsible for the diagnostic report"/>
+      <comment value="SME Note: Rare in general labs to have physicians that sign the lab result.  Lab performing practitioner is usually internal information that gets stored by LIS for operational purposes, but not likely of value to patients or clinicians."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ca/core/StructureDefinition/profile-practitioner"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="vendor-agnostic-v2"/>
+        <map value="OBR-32 (Principal Result Interpreter) or OBX-16 (Responsible Observer)"/>
+      </mapping>
+      <mapping>
+        <identity value="prince-edward-island--cerner-millennium"/>
+        <map value="OBR-32"/>
+      </mapping>
+      <mapping>
+        <identity value="nove-scotia--cerner-millennium"/>
+        <map value="OBX-16 (not sent for all results)"/>
+      </mapping>
+    </element>
+    <element id="DiagnosticReport.performer.organization">
+      <path value="DiagnosticReport.performer.organization"/>
+      <short value="Organization responsible for the diagnostic report"/>
+      <comment value="SME Note: Most commonly, performing organization will be available (more frequently than performing practitioner)."/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/ca/core/StructureDefinition/profile-organization"/>
       </type>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <mapping>
         <identity value="vendor-agnostic-v2"/>
-        <map value="OBX-15 (Producer ID), OBX-23 (Performing Organization Name) if interface is HL7 2.5.1 and higher&#xA;."/>
+        <map value="OBX-15 (Producer ID), OBX-23 (Performing Organization Name) if interface is HL7 2.5.1 and higher"/>
       </mapping>
       <mapping>
         <identity value="ontario--olis"/>
@@ -1669,7 +1702,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island--cerner-millennium"/>
-        <map value="SPM-2"/>
+        <map value="SPM-2.2"/>
       </mapping>
       <mapping>
         <identity value="nova-scotia--meditech-magic"/>
