@@ -16,9 +16,14 @@
       <a href="{{[id]}}.xml.html">XML</a>
     </li>
 {% endunless %}
+{% unless excludemd == 'y' %}
+    <li>
+      <a href="{{[id]}}.md.html">MD</a>
+    </li>
+{% endunless %}
 {% unless excludejson == 'y' %}
     <li>
-      <a href="{{[id]}}.json.html">JSON</a> 
+      <a href="{{[id]}}.json.html">JSON</a>
     </li>
 {% endunless %}
 {% unless excludettl == 'y' %}

@@ -171,7 +171,7 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="ACCESS Home Page"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="artifacts.html"/>
