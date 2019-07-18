@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+    <id value="medicationdispense-clin-example"/>
+    <contained>
+      <DetectedIssue>
+        <!--The Identifier was the ID of the detectedIssue monograph in instatiation/detectedIssueDefinition in the CeRX message, there may be some issues with duplicate identifiers if the ID is not unique across all IDs stored in the local DIS-->
+            <id value="#detectedIssue2354"/>
+        <!--carrying over "active" or "completed" will cause an issue in FHIR connformance, assumed that the value of "unknown" could be populated by the converter in these types of cases-->
+        <status value="unknown"/>
+        <detail value="The patient has an intolerance to iron oxide found in Almotriptan malate 6.25mg"/>
+        <mitigation>
+          <action>
+            <coding>
+              <!--Implementation consideration: we know PEI uses v3-ActCode for this value but it's not communicated in any of the structured data of the test message-->
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+              <code value="5"/>
+              <!--In order to be meaningful to patients, the converter will likely need to create a display based on the value provided (5= consulted provider)-->
+            </coding>
+          </action>
+          <date value="2003-12-01T10:01:01-03:00"/>
+         <author>
+           <reference value="Practitioner/555555"/>
+           <display value="Tech Timmy"/>
+         </author>
+       </mitigation>
+     </DetectedIssue>
+   </contained>
+    <!--narrative removed for simplicity-->
+   <identifier>
+     <value value="987654321"/>
+   </identifier>
+   <status value="completed"/>
+   <medicationCodeableConcept>
+     <coding>
+       <system value="http://hl7.org/fhir/NamingSystem/ca-hc-din"/>
+       <code value="02466821"/>
+       <display value="ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)"/>
+     </coding>
+   </medicationCodeableConcept>
+   <subject>
+     <reference value="Patient/999999999"/>
+   </subject>
+   <performer>
+     <actor>
+       <reference value="Practitioner/888888"/>
+     </actor>
+   </performer>
+   <location>
+     <reference value="Location/123445"/>
+   </location>
+   <authorizingPrescription>
+     <reference value="MedicationRequest/222222"/>
+   </authorizingPrescription>
+   <type>
+     <coding>
+       <!--while the value comes from v3-ActPharmacySupplyType, the OID was not communicated in the test message and is therefore commented out
+       <system value="http://hl7.org/fhir/ValueSet/v3-ActPharmacySupplyType"/> -->
+       <code value="FF"/>
+       <display value="First Fill"/>
+     </coding>
+   </type>
+   <quantity>
+       <value value="250"/>
+       <unit value="mg"/>
+   </quantity>
+   <daysSupply>
+       <value value="30"/>
+       <unit value="d"/>
+   </daysSupply>
+   <dosageInstruction>
+       <sequence value="1"/>
+       <text value="Take 12.5 mg PO at onset; may repeat once after 2 hours. Not to exceed 25 mg/day. This medication is intended to address Migraines at onset. If you experience Migraines for more than 10 days/month, consult your doctor."/>
+       <timing>
+         <repeat>
+           <boundsPeriod>
+          	<start value="2004-01-01"/>
+					  <end value="2004-01-31"/>
+          </boundsPeriod>
+         </repeat>
+       </timing>
+       <route>
+         <coding>
+           <!--This system value is made up because one could not be found for gCRT which is identifier as 2.16.840.1.113883.4.80 in the CeRX message-->
+           <system value="http://terminology.hl7.org/CodeSystem/v3-GCRT"/>
+           <code value="3"/>
+         </coding>
+       </route>
+     <doseAndRate>
+       <doseQuantity>
+           <value value="6.25"/>
+           <unit value="mg"/>
+       </doseQuantity>
+    </doseAndRate>
+    <maxDosePerPeriod>
+      <numerator>
+        <value value="25"/>
+        <unit value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="day"/>
+      </denominator>
+    </maxDosePerPeriod>
+   </dosageInstruction>
+   <substitution>
+     <wasSubstituted value="false"/>
+       <type>
+         <coding>
+           <code value="N"/>
+           <!--While an OID for ActSubstanceAdminSubstitutionCode value set isnt present in the CeRX message, some means of identifying the system is critical for delivering meaning (display value) to patients-->
+         </coding>
+       </type>
+       <reason>
+         <coding>
+           <code value="OS"/>
+           <display value="Out of Stock"/>
+         </coding>
+       </reason>
+       <responsibleParty>
+         <reference value="Practitioner/2356"/>
+       </responsibleParty>
+   </substitution>
+   <!--<?xml version="1.0" encoding="UTF-8"?>
+   <PORX_IN060220CA xmlns="urn:hl7-org:v3" xmlns:gsd="http://aurora.regenstrief.org/GenericXMLSchema" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:xlink="http://www.w3.org/TR/WD-xlink" xmlns:ex="urn:hl7-org/v3-example" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../schemas/mergedschemas/PORX_IN060220CA.xsd" ITSVersion="XML_1.0">
+     <id root="2.16.124.9.101.1.1.1" extension="122"/>
+     <creationTime value="20050101102001"/>
+     <versionCode code="V3-2005-05"/>
+     <interactionId root="2.16.840.1.113883.1.6" extension="PORX_IN060220CA"/>
+     <processingCode code="P"/>
+     <processingModeCode code="T"/>
+     <acceptAckCode code="ER"/>
+     <receiver>
+       <telecom use="WP" value="uri:198.203.1.21"/>
+       <device>
+         <id root="2.16.124.9.101.1.8"/>
+       </device>
+     </receiver>
+     <sender>
+       <telecom use="H" value="uri:198.203.1.23"/>
+       <device>
+         <id root="2.16.124.9.101.1.1"/>
+         <name>PEI DIS</name>
+       </device>
+     </sender>
+     <acknowledgement>
+           <typeCode code="AA"/>
+       <targetMessage>
+         <id root="2.16.124.9.101.1.8.1" extension="122"/>
+       </targetMessage>
+     </acknowledgement>
+     <controlActEvent>
+       <id root="2.16.124.9.101.1.1.17" extension="1245"/>
+       <code code="PORX_TE060030UV"/>
+       <statusCode nullFlavor="NA"/>
+       <subject contextConductionInd="false">
+         <medicationDispense>
+           <id root="2.16.124.9.101.1.1.3" extension="987654321"/>
+           <statusCode code="COMPLETE"/>
+           <responsibleParty>
+             <assignedPerson>
+               <id root="2.16.840.1.113883.4.15" extension="777777"/>
+               <representedPerson>
+                 <name use="L">
+                   <given>Sue</given>
+                   <family>Script</family>
+                 </name>
+               </representedPerson>
+             </assignedPerson>
+           </responsibleParty>
+           <performer typeCode="PRF">
+             <assignedPerson>
+               <id root="2.16.840.1.113883.4.76" extension="888888"/>
+               <representedPerson>
+                 <name use="L">
+                   <given>Robert</given>
+                   <family>Technician</family>
+                 </name>
+               </representedPerson>
+             </assignedPerson>
+           </performer>
+           <location>
+             <serviceDeliveryLocation>
+               <id root="2.16.840.1.113883.4.19" extension="123445"/>
+               <addr>
+                 <city>Charlottetown</city>
+                 <state>PE</state>
+                 <postalCode>C1A5M7</postalCode>
+                 <country>Canada</country>
+               </addr>
+               <telecom use="H" value="tel:9023457823"/>
+               <location>
+                 <name>Shopper's Drug Mart</name>
+               </location>
+             </serviceDeliveryLocation>
+           </location>
+           <inFulfillmentOf>
+             <substanceAdministrationRequest>
+               <id root="2.16.124.9.101.1.1.4" extension="222222"/>
+               <code code="DRUG"/>
+               <author>
+                 <time value="20050101101101"/>
+                 <assignedPerson>
+                   <id root="2.16.840.1.113883.4.14" extension="123456"/>
+                   <code code="DR"/>
+                   <representedPerson>
+                     <name>
+                         <family>Ramoray</family>
+                         <given>Drake</given>
+                     </name>
+                   </representedPerson>
+                 </assignedPerson>
+               </author>
+             </substanceAdministrationRequest>
+           </inFulfillmentOf>
+           <component1>
+             <dosageInstruction moodCode="EVN">
+               <code code="DRUG"/>
+               <text>Take 12.5 mg PO at onset; may repeat once after 2 hours. Not to exceed 25 mg/day. This medication is intended to address Migraines at onset. If you experience Migraines for more than 10 days/month, consult your doctor.</text>
+               <effectiveTime>
+                 <low value="20040101"/>
+                 <high value="20040131"/>
+               </effectiveTime>
+               <routeCode code="3" codeSystem="2.16.840.1.113883.4.80"/>
+               <maxDoseQuantity>
+                 <numerator value="25" unit="mg"/>
+                 <denominator value="1" unit="day"/>
+               </maxDoseQuantity>
+               <administrationUnitCode code="PUFF"/>
+               <consumable>
+                 <medication3>
+                   <player>
+                     <code code="02466821" codeSystem="2.16.840.1.113883.5.1105"/>
+                     <name>ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)</name>
+                      <desc>A concoction of this and that</desc>
+                         <formCode code="SZ" codeSystem="2.16.840.1.113883.4.79"/>
+                      <lotNumberText>2145</lotNumberText>
+                      <expirationTime>
+                        <width unit="d" value="30"/>
+                      </expirationTime>
+                      <asContent>
+                          <quantity value="250" unit="mg"/>
+                         <containerPackagedMedicine>
+                           <formCode code="COMPPKG"/>
+                         </containerPackagedMedicine>
+                      </asContent>
+                     <ingredient negationInd="false">
+                       <quantity value="90" unit="%"/>
+                       <ingredient>
+                         <code code="134529000" codeSystem="2.16.840.1.113883.2.20.3.251"/>
+                         <name>Name of the Ingredient</name>
+                       </ingredient>
+                     </ingredient>
+                   </player>
+                 </medication3>
+               </consumable>
+               <component1>
+                 <supplementalInstruction moodCode="EVN">
+                   <text>Can be taken on an empty stomach</text>
+                 </supplementalInstruction>
+               </component1>
+               <component2>
+                 <sequenceNumber value="1"/>
+                 <dosageLine moodCode="EVN">
+                   <doseQuantity value="6.25" unit="mg"/>
+                   <text>A free form description of how the dispensed medication is to be administered to the patient</text>
+                 </dosageLine>
+               </component2>
+             </dosageInstruction>
+           <component2>
+             <substitutionMade>
+               <code code="N"/>
+               <statusCode code="completed"/>
+               <reasonCode code="OS"/>
+               <responsibleParty>
+                 <agent>
+                   <id root="2.16.840.1.113883.4.15" extension="2356"/>
+                 </agent>
+               </responsibleParty>
+             </substitutionMade>
+           </component2>
+           <component3>
+             <supplyEvent>
+               <code code="FF"/>
+               <effectiveTime>
+                   <low value="20040101"/>
+                   <high nullFlavor="NA"/>
+               </effectiveTime>
+               <quantity value="250" unit="mg"/>
+               <expectedUseTime>
+                 <width unit="d" value="30"/>
+               </expectedUseTime>
+               <product>
+                 <medication>
+                   <player>
+                     <code code="02466821" codeSystem="2.16.840.1.113883.5.1105"/>
+                     <name>ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)</name>
+                      <desc>A concoction of this and that</desc>
+                      <formCode code="PILL"/>
+                      <lotNumberText>2145</lotNumberText>
+                      <expirationTime>
+                        <width unit="d" value="30"/>
+                      </expirationTime>
+                      <asContent>
+                          <quantity value="250.0" unit="mg"/>
+                         <containerPackagedMedicine>
+                           <formCode code="COMPPKG"/>
+                         </containerPackagedMedicine>
+                      </asContent>
+                   </player>
+                 </medication>
+               </product>
+             </supplyEvent>
+           </component3>
+           <subjectOf1>
+             <controlActEvent>
+               <id></id>
+               <code></code>
+               <statusCode></statusCode>
+               <effectiveTime></effectiveTime>
+               <reasonCode></reasonCode>
+               <responsibleParty>
+                 <assignedPerson>
+                   <id></id>
+                   <representedPerson>
+                     <name></name>
+                   </representedPerson>
+                 </assignedPerson>
+               </responsibleParty>
+               <author>
+                 <time></time>
+                 <assignedPerson>
+                   <id></id>
+                   <representedPerson>
+                     <name></name>
+                   </representedPerson>
+                 </assignedPerson>
+               </author>
+             </controlActEvent>
+           </subjectOf1>
+           <subjectOf2>
+             <detectedIssueEvent>
+               <code code="INT"/>
+               <text>The patient has an intolerance to iron oxide found in Almotriptan malate 6.25mg</text>
+               <statusCode code="active"/>
+               <priorityCode code="W"/>
+               <subject>
+                 <substanceAdministration moodCode="">
+                   <id root="2.16.124.9.101.1.1.4" extension="11111"/>
+                   <code code="DRUG"/>
+                   <statusCode code="active"/>
+                   <effectiveTime>
+                      <low value="20031101"/>
+                      <high value="20031130"/>
+                   </effectiveTime>
+                   <doseQuantity value="6.25" unit="mg"/>
+                   <consumable>
+                     <medication>
+                       <player determinerCode="KIND">
+                         <code code="02405792" codeSystem="2.16.840.1.113883.5.1105"/>
+                         <name>ALMOTRIPTAN (almotriptan (almotriptan malate) 6.25 mg oral tablet)</name>
+                       </player>
+                     </medication>
+                   </consumable>
+                 </substanceAdministration>
+               </subject>
+               <subject>
+                 <supplyEvent>
+                   <id root="2.16.124.9.101.1.1.3" extension="121111"/>
+                   <statusCode code="completed"/>
+                   <effectiveTime>
+                     <high value="20031101"/>
+                   </effectiveTime>
+                   <product>
+                     <medication>
+                       <player determinerCode="KIND">
+                         <code code="02405792" codeSystem="2.16.840.1.113883.5.1105"/>
+                         <name>ALMOTRIPTAN (almotriptan (almotriptan malate) 6.25 mg oral tablet)</name>
+                       </player>
+                     </medication>
+                   </product>
+                   <location>
+                     <serviceDeliveryLocation>
+                       <id root="2.16.840.1.113883.4.19" extension="123445"/>
+                       <addr>
+                         <city>Charlottetown</city>
+                         <state>PE</state>
+                         <postalCode>C1A5M7</postalCode>
+                         <country>Canada</country>
+                       </addr>
+                       <telecom use="WP" value="tel:9023457823"/>
+                       <location>
+                         <name>Shopper's Drug Mart</name>
+                       </location>
+                     </serviceDeliveryLocation>
+                   </location>
+                 </supplyEvent>
+               </subject>
+               <instantiation>
+                 <detectedIssueDefinition>
+                   <id root="2.16.124.9.101.1.1.16" extension="2354"/>
+                   <author>
+                     <assignedEntity>
+                       <assignedOrganization>
+                         <name>FDB</name>
+                       </assignedOrganization>
+                     </assignedEntity>
+                   </author>
+                 </detectedIssueDefinition>
+               </instantiation>
+               <mitigatedBy>
+                 <detectedIssueManagement>
+                   <code code="5"/>
+                   <text>The 6.25mg dose pill included iron oxide which the patient was allergic to. The provider was consulted and issued a new prescription for the 12.5mg dose pill that does not include iron oxide. Patient was informed that they can not exceed 25mg/day</text>
+                   <statusCode code="active"/>
+                   <author>
+                     <time value="20031201100101"/>
+                     <assignedPerson>
+                       <id root="2.16.840.1.113883.4.76" extension="555555"/>
+                       <representedPerson>
+                         <name use="L">
+                           <given>Tech</given>
+                           <family>Timmy</family>
+                         </name>
+                       </representedPerson>
+                     </assignedPerson>
+                   </author>
+                 </detectedIssueManagement>
+               </mitigatedBy>
+               <subjectOf>
+                 <severityObservation>
+                   <code code="SEV"/>
+                   <statusCode code="completed"/>
+                   <value code="M"/>
+                 </severityObservation>
+               </subjectOf>
+             </detectedIssueEvent>
+           </subjectOf2>
+           <subjectOf3>
+             <annotation>
+               <text>Some textual observation about the dispense by the dispenser</text>
+               <statusCode code="active"/>
+               <languageCode code="EN"/>
+               <author>
+                 <time value="20040101090101"/>
+                 <assignedPerson>
+                   <id root="2.16.840.1.113883.4.15" extension="777777"/>
+                   <representedPerson>
+                     <name use="L">
+                       <given>Sue</given>
+                       <family>Script</family>
+                     </name>
+                   </representedPerson>
+                 </assignedPerson>
+               </author>
+             </annotation>
+           </subjectOf3>
+           <subjectOf4>
+             <subsetCode code="SUM"></subsetCode>
+             <detectedIssueIndicator>
+               <statusCode code="completed"></statusCode>
+             </detectedIssueIndicator>
+           </subjectOf4>
+           <subjectOf5>
+             <subsetCode code="SUM"></subsetCode>
+             <annotationIndicator>
+               <statusCode code="completed"></statusCode>
+             </annotationIndicator>
+           </subjectOf5>
+         </medicationDispense>
+       </subject>
+       <subjectOf>
+         <detectedIssueEvent>
+           <code></code>
+           <statusCode></statusCode>
+           <priorityCode></priorityCode>
+           <subjectOf>
+             <severityObservation>
+               <code></code>
+               <statusCode></statusCode>
+               <value></value>
+             </severityObservation>
+           </subjectOf>
+         </detectedIssueEvent>
+       </subjectOf>
+       <queryAck>
+         <queryId root="2.16.124.9.101.1.2.5" extension="123"/>
+         <queryResponseCode code="OK"/>
+         <resultTotalQuantity value="1"/>
+         <resultCurrentQuantity value="1"/>
+         <resultRemainingQuantity value="0"/>
+       </queryAck>
+       <queryByParameter>
+         <queryId root="2.16.124.9.101.1.8.5" extension="123"/>
+         <parameterList>
+           <includeIssuesIndicator>
+             <value value="false"/>
+           </includeIssuesIndicator>
+           <includeNotesIndicator>
+             <value value="false"/>
+           </includeNotesIndicator>
+           <patientBirthDate>
+             <value value="19670405"/>
+           </patientBirthDate>
+           <patientGender>
+             <value code="F"/>
+           </patientGender>
+           <patientID>
+             <value root="2.16.840.1.113883.4.13" extension="999999999"/>
+           </patientID>
+           <patientName>
+             <value>
+               <given>Patti</given>
+               <family>Patient</family>
+             </value>
+           </patientName>
+           <prescriptionDispenseNumber>
+             <value root="2.16.124.9.101.1.1.3" extension="987654321"/>
+           </prescriptionDispenseNumber>
+         </parameterList>
+       </queryByParameter>
+     </controlActEvent>
+   </PORX_IN060220CA>-->
+</MedicationDispense>

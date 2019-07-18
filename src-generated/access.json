@@ -99,30 +99,38 @@
   "source": "access.xml",
   "spreadsheets": [
     "observation-gen-pat-access-profile-spreadsheet.xml",
-    "diagnosticReport-gen-pat-access-profile-spreadsheet.xml",
-    "medicationDispense-pat-access-profile-spreadsheet.xml",
-    "medicationDispense-clin-access-profile-spreadsheet.xml",
-    "medicationRequest-clin-access-profile-spreadsheet.xml",
-    "medicationRequest-pat-access-profile-spreadsheet.xml",
-    "medicationStatement-pat-access-profile-spreadsheet.xml",
-    "medicationStatement-clin-access-profile-spreadsheet.xml"
+    "diagnosticreport-gen-pat-access-profile-spreadsheet.xml",
+    "medicationdispense-pat-access-profile-spreadsheet.xml",
+    "medicationdispense-clin-access-profile-spreadsheet.xml",
+    "medicationrequest-clin-access-profile-spreadsheet.xml",
+    "medicationrequest-pat-access-profile-spreadsheet.xml",
+    "medicationstatement-pat-access-profile-spreadsheet.xml",
+    "medicationstatement-clin-access-profile-spreadsheet.xml"
   ],
   "resources": {
     "StructureDefinition/access-observation-gen-pat":{
     },
-    "StructureDefinition/access-diagnosticReport-gen-pat":{
+    "StructureDefinition/access-diagnosticreport-gen-pat":{
     },
-    "StructureDefinition/access-medicationDispense-pat":{
+    "StructureDefinition/access-medicationdispense-pat":{
     },
-    "StructureDefinition/access-medicationDispense-clin":{
+    "StructureDefinition/access-medicationdispense-clin":{
     },
-    "StructureDefinition/access-medicationRequest-pat":{
+    "StructureDefinition/access-medicationrequest-pat":{
     },
-    "StructureDefinition/access-medicationRequest-clin":{
+    "StructureDefinition/access-medicationrequest-clin":{
     },
-    "StructureDefinition/access-medicationStatement-pat":{
+    "StructureDefinition/access-medicationstatement-pat":{
     },
-    "StructureDefinition/access-medicationStatement-clin":{
+    "StructureDefinition/access-medicationstatement-clin":{
+    },
+    "DiagnosticReport/diagnosticreport-gen-pat-example":{
+    },
+    "MedicationDispense/medicationdispense-clin-example":{
+    },
+    "MedicationStatement/medicationstatement-clin-example":{
+    },
+    "Observation/observation-gen-pat-example":{
     }
   }
 }

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="medicationstatement-clin-example"/>
+  <identifier>
+    <value value="123456789"/>
+  </identifier>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/NamingSystem/ca-hc-din"/>
+      <code value="00628158"/>
+      <display value="APO-AMOXI PWR FOR SUSP 250MG/5ML"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/00012346"/>
+  </subject>
+  <effectiveDateTime value="2006-01-01"/>
+  <!--there is currently no 1-to-1 CeRX mapping for dateAsserted, closest recommended mapping was creation time of query/response message-->
+  <dateAsserted value="2005-01-01T10:20:01-03:00"/>
+  <informationSource>
+    <reference value="Practitioner/123456"/>
+  </informationSource>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="194290005"/>
+      <display value="Acute bilateral otitis media (disorder)"/>
+    </coding>
+  </reasonCode>
+  <dosage>
+    <text value="Take 5 mL three times daily until finished."/>
+  </dosage>
+  <!--<?xml version="1.0" encoding="UTF-8"?>
+  <PORX_IN060400CA xmlns="urn:hl7-org:v3" xmlns:gsd="http://aurora.regenstrief.org/GenericXMLSchema" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:xlink="http://www.w3.org/TR/WD-xlink" xmlns:ex="urn:hl7-org/v3-example" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../schemas/mergedschemas/PORX_IN060400CA.xsd" ITSVersion="XML_1.0">
+  	<id root="2.16.124.9.101.1.1.1" extension="122"/>
+  	<creationTime value="20050101102001"/>
+  	<versionCode code="V3-2005-05"/>
+  	<interactionId root="2.16.840.1.113883.1.6" extension="PORX_IN060400CA"/>
+  	<processingCode code="P"/>
+  	<processingModeCode code="T"/>
+  	<acceptAckCode code="ER"/>
+  	<receiver>
+  		<telecom use="WP" value="uri:198.203.1.21"/>
+  		<device>
+  			<id root="2.16.124.9.101.1.8"/>
+  		</device>
+  	</receiver>
+  	<sender>
+  		<telecom use="H" value="uri:198.203.1.23"/>
+  		<device>
+  			<id root="2.16.124.9.101.1.1"/>
+  			<name>PEI DIS</name>
+  		</device>
+  	</sender>
+  	<acknowledgement>
+           <typeCode code="AA"/>
+  		<targetMessage>
+  			<id root="2.16.124.9.101.1.8.1" extension="122"/>
+  		</targetMessage>
+  	</acknowledgement>
+  	<controlActEvent>
+  		<id root="2.16.124.9.101.1.1.17" extension="1245"/>
+  		<code code="PORX_TE060310UV"/>
+  		<statusCode nullFlavor="NA"/>
+  		<subject>
+  			<combinedMedicationRequest>
+  				<id root="2.16.124.9.101.1.1.5" extension="123456789"/>
+  				<code code="DRUG"/>
+  				<statusCode code="active"/>
+          <directTarget>
+  					<medication>
+  						<player>
+  							<code code="00628158" codeSystem="2.16.840.1.113883.5.1105"/>
+  							<name>APO-AMOXI PWR FOR SUSP 250MG/5ML</name>
+  							 <asManufacturedProduct>
+  									<manufacturer>
+  										<name>APOTEX INCORPORATED</name>
+  									</manufacturer>
+  							</asManufacturedProduct>
+  						</player>
+  					</medication>
+  				</directTarget>
+  				<subject>
+  					<patient>
+  						<id root="2.16.840.1.113883.4.13" extension="00012346"/>
+  						<telecom use="H" value="tel:9024567823"/>
+  						<patientPerson>
+  							<name use="L">
+  								<given>Fanny Mae</given>
+  								<family>Hughbanks</family>
+  							</name>
+  							<administrativeGenderCode code="F"/>
+  							<birthTime value="19650301"/>
+  						</patientPerson>
+  					</patient>
+  				</subject>
+  				<author>
+  					<time value="20050101102001"/>
+  					<assignedPerson>
+  						<id root="2.16.840.1.113883.4.14" extension="123456"/>
+  						<code code="DR"/>
+  						<representedPerson>
+  							<name use="L">
+  								<given>Drake</given>
+  								<family>Ramoray</family>
+  							</name>
+  						</representedPerson>
+  					</assignedPerson>
+  				</author>
+  				<location>
+  					<serviceDeliveryLocation>
+  						<id root="2.16.124.9.101.1.7" extension="123445"/>
+  						<addr>
+  							<city>Charlottetown</city>
+  							<state>PE</state>
+  							<postalCode>C1A5M7</postalCode>
+  							<country>Canada</country>
+  						</addr>
+  						<telecom use="H" value="tel:9023457823"/>
+  						<location>
+  							<name>Polyclinic</name>
+  						</location>
+  					</serviceDeliveryLocation>
+  				</location>
+  				<reason>
+  					<observationDiagnosis>
+  						<code code="194290005" codeSystem="2.16.840.1.113883.6.96"/>
+  						<text>Acute bilateral otitis media (disorder)</text>
+  						<statusCode code="completed"/>
+  						<value code="H60.593" codeSystem="2.16.840.1.113883.6.90"/>
+  					</observationDiagnosis>
+  				</reason>
+  				<precondition>
+  					<verificationEventCriterion>
+  						<code code="VFPAPER"/>
+  					</verificationEventCriterion>
+  				</precondition>
+  				<derivedFrom>
+  					<sourceDispense>
+  						<statusCode code="completed"/>
+  					</sourceDispense>
+  				</derivedFrom>
+  				<component1>
+  					<administrationInstructions>
+  						<code code="DRUG"/>
+  						<text>Take 5 mL three times daily until finished.</text>
+  					</administrationInstructions>
+  				</component1>
+  				<component2>
+  					<supplyRequest>
+  						<statusCode code="active"/>
+  						<quantity value="150" unit="ml"/>
+  						<location>
+  						    <substitutionConditionCode code="NOSUB"/>
+  							<serviceDeliveryLocation>
+  								<id root="2.16.124.9.101.1.1.2" extension="123445"/>
+  								<addr>
+  									<city>Charlottetown</city>
+  									<state>PE</state>
+  									<postalCode>C1A5M7</postalCode>
+  									<country>Canada</country>
+  								</addr>
+  								<telecom use="H" value="tel:9023457823"/>
+  								<location>
+  									<name>Shopper's Drug Mart</name>
+  								</location>
+  							</serviceDeliveryLocation>
+  						</location>
+  					</supplyRequest>
+  				</component2>
+  				<fulfillment1>
+  					<subsetCode code="FUTSUM"/>
+  					<supplyEventFutureSummary>
+  						<repeatNumber value="1"/>
+  						<quantity value="150" unit="ml"/>
+  					</supplyEventFutureSummary>
+  				</fulfillment1>
+  				<fulfillment2>
+  					<subsetCode code="FIRST"/>
+  					<supplyEventFirstSummary>
+  						<effectiveTime>
+  							<high value="20060101"/>
+  						</effectiveTime>
+  						<quantity value="150" unit="ml"/>
+  					</supplyEventFirstSummary>
+  				</fulfillment2>
+  				<fulfillment3>
+  					<subsetCode code="RECENT"/>
+  					<supplyEventLastSummary>
+  						<effectiveTime>
+  							<high value="20060101"/>
+  						</effectiveTime>
+  						<quantity value="150" unit="ml"/>
+  					</supplyEventLastSummary>
+  				</fulfillment3>
+  				<fulfillment4>
+  					<subsetCode code="PREVSUM"></subsetCode>
+  					<supplyEventPastSummary>
+  						<repeatNumber value="1"/>
+  						<quantity value="150" unit="ml"/>
+  					</supplyEventPastSummary>
+  				</fulfillment4>
+  				<subjectOf1>
+  					<subsetCode code="SUM"></subsetCode>
+  					<annotationIndicator>
+  						<statusCode code="completed"></statusCode>
+  					</annotationIndicator>
+  				</subjectOf1>
+  				<subjectOf2>
+  					<subsetCode code="SUM"></subsetCode>
+  					<detectedIssueIndicator>
+  						<statusCode code="completed"></statusCode>
+  					</detectedIssueIndicator>
+  				</subjectOf2>
+  				<subjectOf3>
+  					<controlActEvent>
+  						<code></code>
+  						<statusCode></statusCode>
+  						<reasonCode></reasonCode>
+  						<author>
+  							<assignedPerson>
+  								<id></id>
+  								<representedPerson>
+  									<name></name>
+  								</representedPerson>
+  							</assignedPerson>
+  						</author>
+  						<location>
+  							<serviceDeliveryLocation>
+  								<id></id>
+  								<addr></addr>
+  								<telecom></telecom>
+  								<location>
+  									<name></name>
+  								</location>
+  							</serviceDeliveryLocation>
+  						</location>
+  					</controlActEvent>
+  				</subjectOf3>
+  				<componentOf>
+  					<workingListEvent>
+  						<code code="Short-Term/Acute"/>
+  					</workingListEvent>
+  				</componentOf>
+  			</combinedMedicationRequest>
+  		</subject>
+  		<subjectOf>
+  			<detectedIssueEvent>
+  				<code></code>
+  				<statusCode></statusCode>
+  				<priorityCode></priorityCode>
+  				<subjectOf>
+  					<severityObservation>
+  						<code></code>
+  						<statusCode></statusCode>
+  						<value></value>
+  					</severityObservation>
+  				</subjectOf>
+  			</detectedIssueEvent>
+  		</subjectOf>
+  		<queryAck>
+  			<queryId root="2.16.124.9.101.1.2.5" extension="123"/>
+  			<queryResponseCode code="OK"/>
+  			<resultTotalQuantity value="1"/>
+  			<resultCurrentQuantity value="1"/>
+  			<resultRemainingQuantity value="0"/>
+  		</queryAck>
+  		<queryByParameter>
+  			<queryId></queryId>
+  			<parameterList>
+  				<administrationEffectivePeriod>
+  					<value>
+  					     <low value="20040101"/>
+  					     <high value="20050101"/>
+  					</value>
+  				</administrationEffectivePeriod>
+          <amendedInTimeRange>
+  					<value>
+  						 <low value="20040101"/>
+  					     <high value="20050101"/>
+  					</value>
+  				</amendedInTimeRange>
+  				<issueFilterCode>
+  					<value code="I"></value>
+  				</issueFilterCode>
+  				<mostRecentByDrugIndicator>
+  					<value value="false"/>
+  				</mostRecentByDrugIndicator>
+  				<patientBirthDate>
+  					<value value="19650301"/>
+  				</patientBirthDate>
+  				<patientGender>
+  					<value code="F"/>
+  				</patientGender>
+  				<patientID>
+  					<value root="2.16.840.1.113883.4.13" extension="00012346"/>
+  				</patientID>
+  				<patientName>
+  					<value>
+  						<given>Fanny Mae</given>
+  						<family>Hughbanks</family>
+  					</value>
+  				</patientName>
+  			</parameterList>
+  		</queryByParameter>
+  	</controlActEvent>
+  </PORX_IN060400CA>-->
+</MedicationStatement>

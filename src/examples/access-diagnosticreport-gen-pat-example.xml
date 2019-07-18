@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
       <DiagnosticReport  xmlns="http://hl7.org/fhir">
-        <id value="diagnosticreport-general-lab-profile-example"/>
+        <id value="access-diagnosticreport-gen-pat-example"/>
         <meta>
-          <profile value="http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticReport-gen-pat"/>
+          <profile value="http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticreport-gen-pat"/>
         </meta>
         <text> <status value="generated"/> <div xmlns="http://www.w3.org/1999/xhtml"><p> <b> Generated Narrative with Details</b> </p>
-        <p> <b> id</b> : diagnosticreport-general-lab-profile-example</p> <p> <b> identifier</b> : 00003073-L4335^IWK20173001:C00003R</p> <p> <b> status</b> : final</p>
+        <p> <b> id</b> : access-diagnosticreport-gen-pat-example</p> <p> <b> identifier</b> : 00003073-L4335^IWK20173001:C00003R</p> <p> <b> status</b> : final</p>
         <p> <b> category</b> : laboratory test <span> (Details : {http://terminology.hl7.org/CodeSystem/v2-0074 code 'LAB' = 'Laboratory')</span> </p>
         <p> <b> code</b> : Comprehensive Metabolic Panel <span> (Details : {http://MeditechMagic.org/CodeSystem/RequisitionNumbers code '00003073' = 'Comprehensive Metabolic Panel, given as 'Comprehensive Metabolic Panel'})</span> </p>
         <p> <b> subject</b> : <a> Daisy Duck</a> </p>  <p> <b> effectiveDateTime</b> : 01/30/2017 10:00:00 AM</p> <p> <b> issued</b> : 01/30/2017 10:48:00 AM</p>

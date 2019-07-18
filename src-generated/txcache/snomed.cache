@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "194290005",
+  "display" : "Acute bilateral otitis media (disorder)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Acute bilateral otitis media",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "194290005"
+}, "valueSet" :null}####
+v: {
+  "display" : "Acute bilateral otitis media",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

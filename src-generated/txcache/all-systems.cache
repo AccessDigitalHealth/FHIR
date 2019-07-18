@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "FF"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"FF\"; The code provided (#FF) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "N"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"N\"; The code provided (#N) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "OS"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"OS\"; The code provided (#OS) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "400.5000"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"400.5000\"; The code provided (#400.5000) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

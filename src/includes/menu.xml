@@ -2,7 +2,8 @@
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
+  <!--<li><a href="tranformationconsiderations.html">Transformation Considerations</a></li>-->
   <li>
     <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
   </li>
-</ul>      
+</ul>

@@ -9,17 +9,17 @@
   <Author>Grahame</Author>
   <LastAuthor>Sheridan Cook</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2019-07-15T20:54:30Z</LastSaved>
+  <LastSaved>2019-07-18T16:37:08Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>14020</WindowHeight>
-  <WindowWidth>26040</WindowWidth>
-  <WindowTopX>3540</WindowTopX>
-  <WindowTopY>2940</WindowTopY>
+  <WindowHeight>14560</WindowHeight>
+  <WindowWidth>26440</WindowWidth>
+  <WindowTopX>27700</WindowTopX>
+  <WindowTopY>2440</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
@@ -1093,7 +1093,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">SME Note: This is an important element to aid in the visualization of tests that are related. Tests that are related MUST be displayed together in the viewer to maintain clinical significance. &#10;&#10;Data Mapping Note: Some LIS have the capacity to have a very complex hierarchy  of tests. Example  A clinician ordered a panel ' Transplant panel' . This panel  contains 3 group tests (OBR).  Each of these 3 groups contains in turn multiples atomic tests (OBX). To maintain the link between all the groups, the LIS send a value in the OBR -26 (parent result) and OBR-29 ( parent number) . This is specially important when the multiples HL7 messages are sent for the results. &#10;&#10;This is also a special concept for microbiology message (currently out of scope of this profile).</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">OBR-26 + OBR-29 </Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1122,7 +1123,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Mapping Note: The LIS that were examined in Nova Scotia included some additional codes that were unique to the LIS (i.e. FOUT). See the notes in the mapping document discussing the need to map the HL7 v2 codes used by the LIS (shorthand often single-digit codes) to the codes used by the FHIR value set (usually full word code)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-11</Font></B><Font
@@ -1157,7 +1159,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">Laboratory should be the default code used in this general lab profile. Other profiles may support other codes. </Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Laboratory should be the default code used in this general lab profile. Other profiles may support other codes. &#10;&#10;Mapping/Implementor Note: There is no absolute semantic match in v2 that identifies the category of the ORU message, however the element was made must-support under the assumption that the category could be populated during the conversion process through a variety of means (primarily by source information in the message header- some Nova Scotia labs even send lab module). Unlike the US Core, laboratory was not set as a fixed value to avoid over-constraining the profile to the point of counteracting jurisdictional designs already in place  (OLIS observationCategory value set supports both exam and laboratory codes). US Core Observation Results Profile requires the first use of category to default to 'laboratory' using the code system 'http://hl7.org/fhir/observation-category'. Additional codes can be used to provide more detail on the type of laboratory test </Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s65"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1182,7 +1184,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Mapping Note: Every LIS has its own data dictionary. Some LIS dictionaries use nomenclature that has 1:1 mapping to LOINC codes (example: OLIS) others do not. Some LIS vendors (example: Cerner Millennium) may reuse a foundational data dictionary but LIS sites often opt to add additional codes as a supplement to the data dictionary which leads to inconsistency across sites. These codes can be numeric, alpha-numeric, text, or some combination (seen frequently in the test data from Nova Scotia). Occasionally codes may be retired by the vendor or LIS master file but the codes are kept for a period of time to ensure the transition accounts for tests that have not been completed.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-3.1</Font></B><Font
@@ -1250,7 +1253,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">SME/Mapping Note:  This element refers to the date the specimen was collected which is usually found in OBR-7. In some lab test such as Timed test, multiples samples are collected at various time (same date). In this case, the date of specimen collection can be included in the OBX segment. However, this has been found to be an issue with many LIS since they do not provide the information in the messages. &#10;&#10;The patient/physician may refer to this date to distinguish from the other blood collection. </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-14</Font></B><Font
@@ -1281,7 +1285,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">SME Note: This refers to the date the result was released aka result are made available. &#10;&#10;Mapping/Implementor Note: Pay special attention to situation with a group test (containing multiple atomic tests) .If the test result of only one atomic test  is changed after the initial release, then the date in the OBX segment will be updated. Most LIS will also update the date in the OBR segment. Some LIS will update the date of all the atomic tests regardless if the result was changed or remains the same. This can be an issue if the displaying application/viewer has a trigger to warn the user of the change base of the issued date.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBR-22</Font></B><Font
@@ -1332,7 +1337,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">SME Note: Very rare in general labs to have physicians that sign the lab result.  Lab performing practitioner is usually internal information that gets stored by LIS for operational purposes, but not likely of value to patients or clinicians. In pathology (out of scope of this profile) there might be information that is used for f/u with the performing agent.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s112"><Data ss:Type="String">OBR-32 (Principal Result Interpreter) or OBX-16 (Responsible Observer)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1358,7 +1364,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">SME Note: Most commonly, performing organization will be available (more frequently than performing practitioner)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-23 </Font></B><Font
@@ -1425,7 +1432,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Implementor Note: While this is an important FHIR element to support (provides meaning for patients) it has a weak semantic mapping to available HL7 v2 ORU fields (utilized by the Nova Scotia &amp; PEI LIS analyzed). Considered must support for the CA Baseline and US Core profiles, however there is no structured v2 field/code set outside of observation result status (cancel code) that addresses data absent reason.  Likely to be addressed in notes which present their own set of challenges in automatic extraction. &#10;&#10;Key area of consideration given the value that this element has in reducing confusion in patients expecting to see a result that do not receive one. Unless further intervention occurs on behalf of the labs or converter, dataAbsentReason would likely only be populated when the ObservationResultStatus = cancelled.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-11* </Font></B><Font
@@ -1483,7 +1491,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">SME Note: Notes are entered by the lab staff to justify, clarify, or aid the interpretation of the result. It can be a few words to paragraphs. Usually sent in an NTE type of segment. &#10;&#10;Implementor Note: One consideration that needs to be explored with LIS sites is whether there is any risk of exposing data that is inappropriate for the patient in this field. Another consideration if expecting lossless 2-way conversion, is that there are two places where notes can occur in HL7 v2 ORU messages: linked to the OBR (observation) and the OBX (result). Once the note is in FHIR, it will be difficult to identify whether or not it is tied to observation or result using existing structured data. If lossless 2-way for notes is deemed critical, one method of approach would be extensions, but discussions with LIS &amp; end-users recommended to determine feasibility</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">NTE-3 </Font></B><Font
@@ -1513,7 +1522,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Mapping Note: Cerner Millennium NS specifications do not support specimen number, the synonymous accession number is used. Accession number is an unique number given to a tube of blood, urine container. In that sense, specimen number and accession are the same.  </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBR-3.1</Font></B><Font
@@ -1551,6 +1561,7 @@
     <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data></Cell>
     <Cell ss:Index="10"><Data ss:Type="String">v2NAT</Data></Cell>
     <Cell ss:Index="16"><Data ss:Type="String"> Reference range population</Data></Cell>
+    <Cell ss:Index="19" ss:StyleID="s104"><Data ss:Type="String">Mapping Note: One thing implementors should keep in mind is that the HL7 v2 ORU field allows for multiple values to be supplied (example: age based population, sex based population). When more than one value is present they are separated by ^ in the message (ex: A^S) . &#10;&#10;SME Note: This element allows for distinction of abnormal testing (age, race, sex, species, strain) but is not typically displayed in existing clinician lab viewers today.</Data></Cell>
     <Cell ss:Index="21" ss:StyleID="s106"><ss:Data ss:Type="String"
       xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">OBX-10</Font></B><Font
        html:Color="#000000"> (Nature of Abnormal Test)</Font></ss:Data></Cell>
@@ -1791,7 +1802,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>20</LeftColumnRightPane>
+   <LeftColumnRightPane>15</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1806,8 +1817,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>14</ActiveRow>
-     <ActiveCol>23</ActiveCol>
+     <ActiveRow>19</ActiveRow>
+     <ActiveCol>18</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

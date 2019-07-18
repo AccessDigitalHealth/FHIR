@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/NamingSystem/ca-hc-din",
+  "code" : "02466821"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/NamingSystem/ca-hc-din\" is not known for the code \"02466821\"; The code provided (http://hl7.org/fhir/NamingSystem/ca-hc-din#02466821) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/NamingSystem/ca-hc-din",
+  "code" : "00628158"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/NamingSystem/ca-hc-din\" is not known for the code \"00628158\"; The code provided (http://hl7.org/fhir/NamingSystem/ca-hc-din#00628158) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

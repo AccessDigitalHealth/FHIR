@@ -83,15 +83,77 @@
     
     
     
-        <!--<resource>
-      <reference>
-        <reference value="DiagnosticReport/diagnosticreport-general-lab-profile-example"/>
-      </reference>
-      <name value="ACCESS-DiagnosticReport"/>
-      <description value="FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile "/>
-      <exampleCanonical value="StructureDefinition/access-diagnosticReport-gen-pat"/>
-      <groupingId value="examples"/>
-    </resource>-->
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="DiagnosticReport/diagnosticreport-gen-pat-example"/>
+                      
+            </reference>
+                  
+            <name value="ACCESS-DiagnosticReport"/>
+                  
+            <description value="FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile "/>
+                  
+            <exampleCanonical value="StructureDefinition/access-diagnosticreport-gen-pat"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="MedicationDispense/medicationdispense-clin-example"/>
+                      
+            </reference>
+                  
+            <name value="ACCESS-MedicationDispense"/>
+                  
+            <description value="FHIR example of a MedicationDispense resource that is conformant to the ACCESS MedicationDispense Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+                  
+            <exampleCanonical value="StructureDefinition/access-medicationdispense-clin"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="MedicationStatement/medicationstatement-clin-example"/>
+                      
+            </reference>
+                  
+            <name value="ACCESS-MedicationStatement"/>
+                  
+            <description value="FHIR example of a MedicationStatement resource that is conformant to the ACCESS MedicationStatement Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+                  
+            <exampleCanonical value="StructureDefinition/access-medicationstatement-clin"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
+            
+        <resource>
+                  
+            <reference>
+                        
+                <reference value="Observation/observation-gen-pat-example"/>
+                      
+            </reference>
+                  
+            <name value="ACCESS-Observation"/>
+                  
+            <description value="FHIR example of an Observation resource that is conformant to the ACCESS Observation general lab patient-focused profile."/>
+                  
+            <exampleCanonical value="StructureDefinition/access-observation-gen-pat"/>
+                  
+            <groupingId value="examples"/>
+                
+        </resource>
             
         <page>
                   
@@ -125,41 +187,67 @@
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-diagnosticReport-gen-pat.html"/>
+                    <nameUrl value="access-diagnosticreport-gen-pat.html"/>
                     <ns1:title xmlns:ns1="http://hl7.org/fhir" value="General Lab DiagnosticReport"/>
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-medicationDispense-pat.html"/>
+                    <nameUrl value="access-medicationdispense-pat.html"/>
                     <ns2:title xmlns:ns2="http://hl7.org/fhir" value="Medication Dispense (Patient)"/>
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-medicationDispense-clin.html"/>
+                    <nameUrl value="access-medicationdispense-clin.html"/>
                     <ns3:title xmlns:ns3="http://hl7.org/fhir" value="Medication Dispense (Clinician)"/>
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-medicationRequest-pat.html"/>
+                    <nameUrl value="access-medicationrequest-pat.html"/>
                     <ns4:title xmlns:ns4="http://hl7.org/fhir" value="Medication Request (Patient)"/>
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-medicationRequest-clin.html"/>
+                    <nameUrl value="access-medicationrequest-clin.html"/>
                     <ns5:title xmlns:ns5="http://hl7.org/fhir" value="Medication Request (Clinician)"/>
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-medicationStatement-pat.html"/>
+                    <nameUrl value="access-medicationstatement-pat.html"/>
                     <ns6:title xmlns:ns6="http://hl7.org/fhir" value="Medication Statement (Patient)"/>
                     <generation value="generated"/>
                 </page>
                 <page>
-                    <nameUrl value="access-medicationStatement-clin.html"/>
+                    <nameUrl value="access-medicationstatement-clin.html"/>
                     <ns7:title xmlns:ns7="http://hl7.org/fhir" value="Medication Statement (Clinician)"/>
                     <generation value="generated"/>
                 </page>
+                <page>
+                    <nameUrl value="diagnosticreport-gen-pat-example.html"/>
+                    <ns8:title xmlns:ns8="http://hl7.org/fhir" value="ACCESS-DiagnosticReport"/>
+                    <generation value="generated"/>
+                </page>
+                <page>
+                    <nameUrl value="medicationdispense-clin-example.html"/>
+                    <ns9:title xmlns:ns9="http://hl7.org/fhir" value="ACCESS-MedicationDispense"/>
+                    <generation value="generated"/>
+                </page>
+                <page>
+                    <nameUrl value="medicationstatement-clin-example.html"/>
+                    <ns10:title xmlns:ns10="http://hl7.org/fhir" value="ACCESS-MedicationStatement"/>
+                    <generation value="generated"/>
+                </page>
+                <page>
+                    <nameUrl value="observation-gen-pat-example.html"/>
+                    <ns11:title xmlns:ns11="http://hl7.org/fhir" value="ACCESS-Observation"/>
+                    <generation value="generated"/>
+                </page>
             </page>
+                  
+            <!--<page>
+        <nameUrl value="tranformationconsiderations.html"/>
+        <title value="Transformation Considerations"/>
+        <generation value="html"/>
+      </page>-->
                 
         </page>
           

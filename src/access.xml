@@ -28,25 +28,25 @@
         <valueUri value="observation-gen-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="diagnosticReport-gen-pat-access-profile-spreadsheet.xml"/>
+        <valueUri value="diagnosticreport-gen-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="medicationDispense-pat-access-profile-spreadsheet.xml"/>
+        <valueUri value="medicationdispense-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="medicationDispense-clin-access-profile-spreadsheet.xml"/>
+        <valueUri value="medicationdispense-clin-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="medicationRequest-clin-access-profile-spreadsheet.xml"/>
+        <valueUri value="medicationrequest-clin-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="medicationRequest-pat-access-profile-spreadsheet.xml"/>
+        <valueUri value="medicationrequest-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="medicationStatement-pat-access-profile-spreadsheet.xml"/>
+        <valueUri value="medicationstatement-pat-access-profile-spreadsheet.xml"/>
       </extension>
       <extension url="http://hl7.org/fhir/tools-profile-spreadsheet">
-        <valueUri value="medicationStatement-clin-access-profile-spreadsheet.xml"/>
+        <valueUri value="medicationstatement-clin-access-profile-spreadsheet.xml"/>
       </extension>
       <name value="Profiles"/>
       <description value="Constraints on FHIR resources to be adhered to as part of the ACCESS implementation guide"/>
@@ -76,7 +76,7 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-diagnosticReport-gen-pat"/>
+        <reference value="StructureDefinition/access-diagnosticreport-gen-pat"/>
       </reference>
       <name value="General Lab DiagnosticReport"/>
       <description value="FHIR Requirements for general lab DiagnosticReport information displayed to a citizen/patient."/>
@@ -88,7 +88,7 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-medicationDispense-pat"/>
+        <reference value="StructureDefinition/access-medicationdispense-pat"/>
       </reference>
       <name value="Medication Dispense (Patient)"/>
       <description value="FHIR Requirements for medication dispense information displayed to a citizen/patient."/>
@@ -100,7 +100,7 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-medicationDispense-clin"/>
+        <reference value="StructureDefinition/access-medicationdispense-clin"/>
       </reference>
       <name value="Medication Dispense (Clinician)"/>
       <description value="FHIR Requirements for medication dispense information displayed to a clinician."/>
@@ -112,7 +112,7 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-medicationRequest-pat"/>
+        <reference value="StructureDefinition/access-medicationrequest-pat"/>
       </reference>
       <name value="Medication Request (Patient)"/>
       <description value="FHIR Requirements for medication request information displayed to a citizen/patient."/>
@@ -124,7 +124,7 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-medicationRequest-clin"/>
+        <reference value="StructureDefinition/access-medicationrequest-clin"/>
       </reference>
       <name value="Medication Request (Clinician)"/>
       <description value="FHIR Requirements for medication request information displayed to a clinician."/>
@@ -136,7 +136,7 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-medicationStatement-pat"/>
+        <reference value="StructureDefinition/access-medicationstatement-pat"/>
       </reference>
       <name value="Medication Statement (Patient)"/>
       <description value="FHIR Requirements for medication statement information displayed to a citizen/patient."/>
@@ -148,22 +148,49 @@
         <valueBoolean value="true"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/access-medicationStatement-clin"/>
+        <reference value="StructureDefinition/access-medicationstatement-clin"/>
       </reference>
       <name value="Medication Statement (Clinician)"/>
       <description value="FHIR Requirements for medication statement information displayed to a clinician."/>
       <exampleBoolean value="false"/>
       <groupingId value="profiles"/>
     </resource>
-    <!--<resource>
+    <resource>
       <reference>
-        <reference value="DiagnosticReport/diagnosticreport-general-lab-profile-example"/>
+        <reference value="DiagnosticReport/diagnosticreport-gen-pat-example"/>
       </reference>
       <name value="ACCESS-DiagnosticReport"/>
       <description value="FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile "/>
-      <exampleCanonical value="StructureDefinition/access-diagnosticReport-gen-pat"/>
+      <exampleCanonical value="StructureDefinition/access-diagnosticreport-gen-pat"/>
       <groupingId value="examples"/>
-    </resource>-->
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medicationdispense-clin-example"/>
+      </reference>
+      <name value="ACCESS-MedicationDispense"/>
+      <description value="FHIR example of a MedicationDispense resource that is conformant to the ACCESS MedicationDispense Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+      <exampleCanonical value="StructureDefinition/access-medicationdispense-clin"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/medicationstatement-clin-example"/>
+      </reference>
+      <name value="ACCESS-MedicationStatement"/>
+      <description value="FHIR example of a MedicationStatement resource that is conformant to the ACCESS MedicationStatement Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+      <exampleCanonical value="StructureDefinition/access-medicationstatement-clin"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/observation-gen-pat-example"/>
+      </reference>
+      <name value="ACCESS-Observation"/>
+      <description value="FHIR example of an Observation resource that is conformant to the ACCESS Observation general lab patient-focused profile."/>
+      <exampleCanonical value="StructureDefinition/access-observation-gen-pat"/>
+      <groupingId value="examples"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -178,6 +205,11 @@
         <title value="Artifact List"/>
         <generation value="html"/>
       </page>
+      <!--<page>
+        <nameUrl value="tranformationconsiderations.html"/>
+        <title value="Transformation Considerations"/>
+        <generation value="html"/>
+      </page>-->
     </page>
   </definition>
 </ImplementationGuide>
