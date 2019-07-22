@@ -24,7 +24,7 @@ As part of the scope of the discovery phase of this project, mappings, profiles 
 
 Availability of Atlantic LIS specifications and test messages were also a limitation on mapping and profiling efforts. Currently, the general lab profiles were completed using documentation from Nova Scotia, Prince Edward Island, and Ontario Lab Information Systems (LIS). Additional evaluation and iteration of these profiles, as additional jurisdictional specifications are made available, is paramount to ensure the final profile reflects the current state of Atlantic systems.
 
-Alignment and compatibility with other prominent profiles in similar functional areas was sought (e.g. OLIS, US Core/CA Core), in part to validate the ACCESS Atlantic work, and in part to ensure that decisions taken in developing the ACCESS Atlantic profiles were, at a minimum, not mutually exclusive with widely used profiles.
+Alignment and compatibility with other prominent profiles in similar functional areas was sought (e.g. OLIS, US Core/CA Core), in part to validate the ACCESS Atlantic work, and in part to ensure that decisions taken in developing the ACCESS profiles were, at a minimum, not mutually exclusive with widely used profiles.
 
 
 ## Profiling Principles
@@ -74,41 +74,41 @@ These profiles sought to target alignment with the US Core Lab Result Observatio
 
 ### **Key differences from [US Core Lab Result Observation R4 Profile](https://build.fhir.org/ig/HL7/US-Core-R4/StructureDefinition-us-core-observation-lab.html):**
 
-The ACCESS Atlantic and US Core Observation profiles are quite similar. The US Core Profiles are being used as the foundation to draft the Canadian Core Profiles. Because of this, the ACCESS Atlantic Laboratory and Medication profiles sought to align with the US Core whenever appropriatewith a few exceptions.
+The ACCESS profiles and US Core Observation profiles are quite similar. The US Core Profiles are being used as the foundation to draft the Canadian Core Profiles. Because of this, the ACCESS Laboratory and Medication profiles sought to align with the US Core whenever appropriate with a few exceptions.
 
 It is important to note that US Core profiles in STU3 and R4 have mild differences between them (ex: cardinality for category), the best efforts were made to ensure optionality while the Canadian FHIR working groups identify which choices will be inherited into the CA Core profiles.  
 
-Variances between the ACCESS Atlantic and US Core are minimal. Resources that are created by a system that utilizes the US Core are very likely to be conformant to the ACCESS Atlantic profile, so long as it supports interpretation (not necessary to populate). Because the ACCESS profiles do not implement prohibitive constraints, even if a resource was to include effectivePeriod (a variance between the two profiles) it should not result in a conformance error.
+Variances between the ACCESS profiles and US Core are minimal. Resources that are created by a system that utilizes the US Core are very likely to be conformant to the ACCESS profile, so long as it supports interpretation (not necessary to populate). Because the ACCESS profiles do not implement prohibitive constraints, even if a resource was to include effectivePeriod (a variance between the two profiles) it should not result in a conformance error.
 
 **Must Support Differences**
-- Interpretation was flagged as a must-support element in the ACCESS Atlantic profile, but not in the US Core Profile. The flag was added due to the importance of interpretive data for citizens’ understanding of their lab results compared to the reference range
+- Interpretation was flagged as a must-support element in the ACCESS profile, but not in the US Core Profile. The flag was added due to the importance of interpretive data for citizens’ understanding of their lab results compared to the reference range
 
 **Cardinality Constraint Differences**
-- ACCESS Atlantic Observation profile set the cardinality of category to 1..*  while US Core R4 sets an upper cardinality of 1..1 for category, US CORE STU3 utilizes a 1..* cardinality. Until the CA Core profiling community determines which of the versions Canadian vendors are more likely to align with, the cardinality should be kept at 1..* to avoid over constraining the profiles and introducing conformance errors.
+- ACCESS Observation profile set the cardinality of category to 1..*  while US Core R4 sets an upper cardinality of 1..1 for category, US CORE STU3 utilizes a 1..* cardinality. Until the CA Core profiling community determines which of the versions Canadian vendors are more likely to align with, the cardinality should be kept at 1..* to avoid over constraining the profiles and introducing conformance errors.
 
 **Cardinality Constraint Differences**
-- ACCESS Atlantic Observation profile limited the effective[x] data type to only include effectiveDateTime. While the base resource supports multiple data types: DateTime, Timing, Period, Instant, the lab sources are expected to be utilizing HL7 v2 time stamp data type which more closely aligns with dateTime. *OLIS took a similar approach to its observation profile, while US Core allowed both dateTime and Period data types to be supported.*  
-- The ACCESS Atlantic profile also binds to the CA Core profiles whenever possible (CA Core Patient, practitioner, organization).
+- ACCESS Observation profile limited the effective[x] data type to only include effectiveDateTime. While the base resource supports multiple data types: DateTime, Timing, Period, Instant, the lab sources are expected to be utilizing HL7 v2 time stamp data type which more closely aligns with dateTime. *OLIS took a similar approach to its observation profile, while US Core allowed both dateTime and Period data types to be supported.*  
+- The ACCESS profile also binds to the CA Core profiles whenever possible (CA Core Patient, practitioner, organization).
 
 **Binding Differences**
 - Setting a fixed system or value for category was avoided due to the expectation that other profiling efforts will result in the use of two (or more) category systems and values. US Core fixes its system to “http://terminology.hl7.org/CodeSystem/observation-category” and fixes its value to “laboratory”.  *While to OLIS has a preferred binding to http://hl7.org/fhir/STU3/codesystem-observation-category.html and suggests the use of “laboratory” and “exam” values.*
-- In observationCode, US Core uses an extensible binding to LOINC Code value set. The ACCESS Atlantic profile provides an alternative example binding to the lab observation code value set that is utilized in the OLIS profile
+- In observationCode, US Core uses an extensible binding to LOINC Code value set. The ACCESS profile provides an alternative example binding to the lab observation code value set that is utilized in the OLIS profile
 
 
 ### **Key differences from the [OLIS DiagnosticReport STU3 Profile](https://simplifier.net/ontariolaboratoriesi/diagnosticreport-provider):**
 
-The ACCESS Atlantic and OLIS Observation profiles are broadly similar – ACCESS Atlantic requirements are effectively a subset of OLIS requirements, however OLIS is more restrictive in the observation profile particularly involving must-support elements and cardinality. Differences between the two profiles are as follows.
+The ACCESS profile and OLIS Observation profiles are broadly similar – ACCESS profile requirements are effectively a subset of OLIS requirements, however OLIS is more restrictive in the observation profile particularly involving must-support elements and cardinality. Differences between the two profiles are as follows.
 
 It is important to note that the OLIS profiles at the time of this analysis are built on FHIR STU3, while ACCESS profiles are built on FHIR R4. A number of variances are not due to design choice, but rather are the result of the changes of the base resource due to FHIR version. Furthermore, the ACCESS profiles are tailored to citizen access (unlike the OLIS profile examined on Simplifier) and it is believed to be likely that citizens/patients require different details than clinicians – e.g. a citizen or patient’s interpretation of the data is not likely impacted by the method by which a laboratory test was performed.
 
-Version differences notwithstanding, any implementation that adheres to the OLIS profile should also be compatible with the ACCESS Atlantic profile, so long as it also supports dataAbsentReason and provides a defaulted value for category (*defaulting discussed further in the gap analysis excel files and the profile change logs*) .
+Version differences notwithstanding, any implementation that adheres to the OLIS profile should also be compatible with the ACCESS profile, so long as it also supports dataAbsentReason and provides a defaulted value for category (*defaulting discussed further in the gap analysis excel files and the profile change logs*) .
 
 
 **Must Support Differences**
-- dataAbsentReason is flagged as Must Support for ACCESS Atlantic, but not OLIS.
-  - This is due to the focus that the ACCESS Atlantic laboratory profiles have on patient access.
+- dataAbsentReason is flagged as Must Support for ACCESS, but not OLIS.
+  - This is due to the focus that the ACCESS laboratory profiles have on patient access.
   - dataAbsentReason was added as a must support element in order to reduce confusion in cases where a lab result is not available.
-- id, identifier, basedOn, issued, performer, method, specimen and referenceRange are flagged as Must Support for OLIS but not ACCESS Atlantic.
+- id, identifier, basedOn, issued, performer, method, specimen and referenceRange are flagged as Must Support for OLIS but not the ACCESS profile.
   - This was done in accordance with the profiling principles to avoid over-restriction and align with the US/CA Core whenever possible.
   - While referenceRange is anticipated to be available in most resources, reviews with subject matter experts (SMEs) revealed that reference ranges will vary by the lab and testing methods utilized by the data source. The elements that are likely to provide the most meaning to citizens are lab value and value interpretation (which are both tagged as must supports).
 
@@ -127,7 +127,7 @@ Version differences notwithstanding, any implementation that adheres to the OLIS
 
 
 **Binding Differences**
-- Observation Status is one example of binding variances between OLIS and ACCESS Atlantic Profiles. OLIS suggests a preferred binding to the STU3 Observation Status Value Set, while the ACCESS profile inherits the required binding from the R4 base resource (Observation Status).
+- Observation Status is one example of binding variances between OLIS and ACCESS Profiles. OLIS suggests a preferred binding to the STU3 Observation Status Value Set, while the ACCESS profile inherits the required binding from the R4 base resource (Observation Status).
   - While the value sets are different, the coded values within both value sets are the same, so no terminology considerations are anticipated.
 - Interpretation value set binding is another example of differences between the two profiles. ACCESS promotes an extensible binding to the R4 Observation Interpretation Value Set, while the OLIS profile uses the eHealth Ontario published value set tied to the binding from the STU3 base resource (Observation Interpretation)
   - While the value sets are different, the codes that OLIS utilizes are a subset of the code system that the ACCESS profile is bound to.

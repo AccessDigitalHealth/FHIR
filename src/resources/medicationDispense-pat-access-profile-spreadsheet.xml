@@ -18,10 +18,10 @@
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>14600</WindowHeight>
   <WindowWidth>26440</WindowWidth>
-  <WindowTopX>1980</WindowTopX>
-  <WindowTopY>2460</WindowTopY>
+  <WindowTopX>31620</WindowTopX>
+  <WindowTopY>2480</WindowTopY>
   <TabRatio>814</TabRatio>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -906,7 +906,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1197,7 +1196,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s112"><Data ss:Type="String">SCTMC</Data><NamedCell
+    <Cell ss:StyleID="s112"><Data ss:Type="String">CCDD</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="14" ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="16" ss:StyleID="s98"><Data ss:Type="String">What medication was supplied</Data><NamedCell
@@ -1673,12 +1672,13 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>19</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1693,9 +1693,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>22</ActiveCol>
-     <RangeSelection>R3C23:R20C23</RangeSelection>
+     <ActiveRow>9</ActiveRow>
+     <ActiveCol>10</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5551,14 +5550,14 @@
     <Cell ss:Index="13" ss:StyleID="s133"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s84"><Data ss:Type="String">MFD</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">Manufactured Drug</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">CCDD</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Canadian Clinical Drug Data (CCDD) Medicinal Products</Data></Cell>
     <Cell><Data ss:Type="String">value set</Data></Cell>
-    <Cell><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s150" ss:HRef="https://infocentral.infoway-inforoute.ca/extra/ns/cerx43-html/html/vocabulary.html?type=vs&amp;id=ManufacturedDrug"><Data
-      ss:Type="String">https://infocentral.infoway-inforoute.ca/extra/ns/cerx43-html/html/vocabulary.html?type=vs&amp;id=ManufacturedDrug</Data></Cell>
-    <Cell><Data ss:Type="String">Identifies a drug or the use of a drug as produced by a specific manufacturer.</Data></Cell>
-    <Cell><Data ss:Type="String">2.16.840.1.113883.2.20.3.235</Data></Cell>
+    <Cell><Data ss:Type="String">preferred</Data></Cell>
+    <Cell ss:StyleID="s150" ss:HRef="https://fhir.infoway-inforoute.ca/ValueSet/prescriptionmedicinalproduct"><Data
+      ss:Type="String">https://fhir.infoway-inforoute.ca/ValueSet/prescriptionmedicinalproduct</Data></Cell>
+    <Cell><Data ss:Type="String">Medicinal products for prescribing. The content of this subset only contains commonly used medicinal products that are available for prescribing and dispensing in Canada. This content will expand to include all human medicinal products over time.</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.5.1105</Data></Cell>
     <Cell ss:Index="13" ss:StyleID="s133"/>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -5759,8 +5758,9 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>12</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>0</ActiveCol>
+     <RangeSelection>R3C1:R3C7</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
