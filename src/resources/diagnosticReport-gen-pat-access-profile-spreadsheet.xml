@@ -16,12 +16,13 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>14060</WindowHeight>
-  <WindowWidth>26040</WindowWidth>
-  <WindowTopX>27340</WindowTopX>
-  <WindowTopY>2080</WindowTopY>
+  <WindowHeight>13180</WindowHeight>
+  <WindowWidth>25240</WindowWidth>
+  <WindowTopX>30440</WindowTopX>
+  <WindowTopY>4540</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
+  <FirstVisibleSheet>2</FirstVisibleSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -852,9 +853,9 @@
  <Worksheet ss:Name="access-diagnosticreport-gen-pat">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='access-diagnosticreport-gen-pat'!R1C1:R14C28" ss:Hidden="1"/>
+    ss:RefersTo="='access-diagnosticreport-gen-pat'!R1C1:R15C28" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="39" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="40" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s84" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s84" ss:AutoFitWidth="0" ss:Width="122"/>
@@ -958,8 +959,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s90"><Data ss:Type="String">Requirements</Data><Comment
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
-        html:Color="#000000">        </Font><Font html:Face="Tahoma"
-        x:Family="Swiss" html:Size="8" html:Color="#000000">Why element/resource is needed or why selected constraints chosen</Font><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Why element/resource is needed or why selected constraints chosen</Font><Font
         html:Color="#000000">       </Font></ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s90"><Data ss:Type="String">Comments</Data><Comment
@@ -1095,7 +1095,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">pattern</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.category</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1124,6 +1125,32 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s110"><Data ss:Type="String">OBR-24</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">DiagnosticReport.category.lab</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">1..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">CodeableConcept</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="13"><Data ss:Type="String">&lt;valueCodeableConcept xmlns=&quot;http://hl7.org/fhir&quot;&gt;&#10;  &lt;coding&gt;&#10;    &lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0074&quot;/&gt;&#10;    &lt;code value=&quot;LAB&quot;/&gt;&#10;  &lt;/coding&gt;&#10;&lt;/valueCodeableConcept&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="17" ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s110"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s110"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s110"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s110"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s110"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
@@ -1633,7 +1660,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>15</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1648,14 +1675,14 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>14</ActiveRow>
-     <ActiveCol>18</ActiveCol>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
-  <AutoFilter x:Range="R1C1:R14C28"
+  <AutoFilter x:Range="R1C1:R15C28"
    xmlns="urn:schemas-microsoft-com:office:excel">
   </AutoFilter>
  </Worksheet>

@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>15660</WindowHeight>
-  <WindowWidth>27240</WindowWidth>
-  <WindowTopX>1180</WindowTopX>
-  <WindowTopY>1460</WindowTopY>
+  <WindowHeight>14100</WindowHeight>
+  <WindowWidth>26040</WindowWidth>
+  <WindowTopX>30960</WindowTopX>
+  <WindowTopY>6160</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
@@ -413,18 +413,6 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
   </Style>
-  <Style ss:ID="s110">
-   <Borders>
-    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
-    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
-   </Borders>
-   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF0000"/>
-   <Interior/>
-   <NumberFormat/>
-   <Protection/>
-  </Style>
   <Style ss:ID="s111">
    <Alignment ss:Vertical="Top" ss:WrapText="1"/>
    <Borders/>
@@ -802,6 +790,18 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
   </Style>
+  <Style ss:ID="s166">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -948,9 +948,9 @@
  <Worksheet ss:Name="access-medicationdispense-clin">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='access-medicationdispense-clin'!R1C1:R30C26" ss:Hidden="1"/>
+    ss:RefersTo="='access-medicationdispense-clin'!R1C1:R31C26" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="32" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="33" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s84" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s84" ss:AutoFitWidth="0" ss:Width="122"/>
@@ -1181,9 +1181,7 @@
     <Cell ss:Index="13" ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">active</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16" ss:StyleID="s110"><ss:Data ss:Type="String"
-      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#FF0000">preparation | in-progress | on-hold | entered-in-error | stopped |</Font><Font
-       html:Color="#000000"> normal | aborted | active | cancelled | completed | held | new | suspended | nullified | obsolete</Font></ss:Data><NamedCell
+    <Cell ss:Index="16" ss:StyleID="s166"><Data ss:Type="String">preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | unknown </Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><Data ss:Type="String"> </Data><NamedCell
@@ -1487,6 +1485,30 @@
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">MedicationDispense.whenPrepared</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s105"><Data ss:Type="String">dateTime</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s98"><Data ss:Type="String">The time when the dispensed product was packaged and reviewed</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">SME Note: there are likely variances in whether jurisdictional DIS are populating whenPrepared. In cases where a jurisdictional DIS does support whenPrepared &amp; whenHanded over, they are likely to only record whenPrepared due to existing workflow issues. </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">MedicationDispense.dosageInstruction</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="8" ss:StyleID="s105"><Data ss:Type="String">Dosage</Data><NamedCell
@@ -1550,7 +1572,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="8" ss:StyleID="s105"><Data ss:Type="String">string</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="16" ss:StyleID="s116"><Data ss:Type="String">Free text dosage instructions e.g. SIG</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1962,7 +1985,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>19</LeftColumnRightPane>
+   <LeftColumnRightPane>13</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1977,14 +2000,14 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>6</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>15</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
-  <AutoFilter x:Range="R1C1:R30C26"
+  <AutoFilter x:Range="R1C1:R31C26"
    xmlns="urn:schemas-microsoft-com:office:excel">
   </AutoFilter>
  </Worksheet>
@@ -6048,8 +6071,9 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>12</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>0</ActiveCol>
+     <RangeSelection>R3C1:R3C7</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

@@ -9,7 +9,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Sheridan Cook</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2019-07-15T18:29:44Z</LastSaved>
+  <LastSaved>2019-07-23T16:10:04Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -18,8 +18,8 @@
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>14600</WindowHeight>
   <WindowWidth>26440</WindowWidth>
-  <WindowTopX>31620</WindowTopX>
-  <WindowTopY>2480</WindowTopY>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>4060</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
@@ -1167,7 +1167,7 @@
     <Cell ss:Index="13" ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">active</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16" ss:StyleID="s110"><Data ss:Type="String">preparation | in-progress | on-hold | entered-in-error | stopped | normal | aborted | active | cancelled | completed | held | new | suspended | nullified | obsolete</Data><NamedCell
+    <Cell ss:Index="16" ss:StyleID="s110"><Data ss:Type="String">preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | unknown </Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><Data ss:Type="String"> </Data><NamedCell
@@ -1456,7 +1456,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="8" ss:StyleID="s105"><Data ss:Type="String">string</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="16" ss:StyleID="s114"><Data ss:Type="String">Free text dosage instructions e.g. SIG</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1678,7 +1679,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <LeftColumnRightPane>7</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -1693,8 +1694,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>9</ActiveRow>
-     <ActiveCol>10</ActiveCol>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>15</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5758,9 +5759,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>0</ActiveCol>
-     <RangeSelection>R3C1:R3C7</RangeSelection>
+     <ActiveRow>19</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
