@@ -128,6 +128,8 @@
     },
     "MedicationDispense/medicationdispense-clin-example":{
     },
+    "MedicationDispense/medicationrequest-clin-example":{
+    },
     "MedicationStatement/medicationstatement-clin-example":{
     },
     "Observation/observation-gen-pat-example":{

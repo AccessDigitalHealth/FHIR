@@ -35,3 +35,21 @@ v: {
   "error" : "The code system \"\" is not known for the code \"400.5000\"; The code provided (#400.5000) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "INT"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"INT\"; The code provided (#INT) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "PSY"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"PSY\"; The code provided (#PSY) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -20,3 +20,24 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "37796009"
+}, "valueSet" :null}####
+v: {
+  "display" : "Migraine",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "37796009",
+  "display" : "Migraine (disorder)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Migraine",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

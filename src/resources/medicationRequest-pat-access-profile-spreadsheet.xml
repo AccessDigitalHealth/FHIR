@@ -9,19 +9,19 @@
   <Author>Grahame</Author>
   <LastAuthor>Sheridan Cook</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2019-06-27T18:29:30Z</LastSaved>
+  <LastSaved>2019-07-25T17:05:53Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>15600</WindowHeight>
-  <WindowWidth>27240</WindowWidth>
-  <WindowTopX>1180</WindowTopX>
-  <WindowTopY>1460</WindowTopY>
+  <WindowHeight>15020</WindowHeight>
+  <WindowWidth>26840</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>600</WindowTopY>
   <TabRatio>814</TabRatio>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -850,6 +850,16 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
   </Style>
+  <Style ss:ID="s182">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s183">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s184">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -969,7 +979,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1000,9 +1009,9 @@
  <Worksheet ss:Name="access-medicationrequest-pat">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='access-medicationrequest-pat'!R1C1:R21C26" ss:Hidden="1"/>
+    ss:RefersTo="='access-medicationrequest-pat'!R1C1:R22C26" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="38" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="39" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s84" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s84" ss:AutoFitWidth="0" ss:Width="122"/>
@@ -1247,7 +1256,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s96"><Data ss:Type="String">This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid. &#10;&#10;Atlantic Implementors need to be aware that the Act Status Codes recommended by CeRX only partially match the codes to the MedicationRequest status (required) value set</Data><NamedCell
+    <Cell ss:StyleID="s130"><Data ss:Type="String">This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid. &#10;&#10;Mapping Note: Implementors need to be aware that the Act Status Codes recommended by CeRX only partially match the codes to the MedicationRequest status (required) value set</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s96"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1283,7 +1292,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s96"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">Mapping Note: The mappable value from CeRX ActDetectedIssueCode value set is not semantically perfect. Conversion for this FHIR element should be limited to non-active statuses because the only semantic similar CeRX field that was found relates to reasons for refusal to fill or detected issue statuses.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s96"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">PORX_IN060260CA/QUQI_MT120000CA/controlActEvent/subjectOf/PORX_MT980020CA/detectedIssueEvent/code OR PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/subjectOf6/refusalToFill/reason/detectedIssueEvent/code</Data><NamedCell
@@ -1291,6 +1301,36 @@
     <Cell ss:StyleID="s103"><Data ss:Type="String">PORX_IN060260CA/QUQI_MT120000CA/controlActEvent/subjectOf/PORX_MT980020CA/detectedIssueEvent/code OR PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/subjectOf6/refusalToFill/reason/detectedIssueEvent/code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">PORX_IN060260CA/QUQI_MT120000CA/controlActEvent/subjectOf/PORX_MT980020CA/detectedIssueEvent/code OR PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/subjectOf6/refusalToFill/reason/detectedIssueEvent/code</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">MedicationRequest.intent</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8" ss:StyleID="s109"><Data ss:Type="String">code</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">MRI</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">proposal | plan | order | original-order | instance-order | option</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s183"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s183"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">SME Note: From a mapping perspective, the requests that exist in V3 systems today would have RQO as the mood code.  This would map to &quot;&quot;order&quot;&quot; for MedicationRequest.intent.&#10;&#10;Given that this profile focuses on FHIR resources generated from CeRX messages by Canadian Drug Information Systems,  the codes most likely applicable from the required value set are: &quot;&quot;order&quot;&quot;, &quot;&quot;plan&quot;&quot;, and &quot;&quot;proposal&quot;&quot; &#10;&#10;SME Note: From a mapping perspective, the requests that exist in V3 systems today would have RQO as the mood code.  This would map to &quot;&quot;order&quot;&quot; for MedicationRequest.intent.&#10;If patient requests are supported in the future, these would be an intent of &quot;proposal&quot;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s184"><Data ss:Type="String">PORX_IN020190CA/PORX_MT020070CA/medicationDispense/inFulfillmentOf/substanceAdministrationRequest/moodCode</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s184"><Data ss:Type="String">PORX_IN060260CA/ PORX_MT060340CA/ combinedMedicationRequest/ component1/ PORX_MT980040CA/ dosageInstruction/component2/dosageLine/moodCode</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s184"><Data ss:Type="String">PORX_IN060260CA/ PORX_MT060340CA/ combinedMedicationRequest/ component1/ PORX_MT980040CA/ dosageInstruction/component2/dosageLine/moodCode</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s184"><Data ss:Type="String">PORX_IN060260CA/ PORX_MT060340CA/ combinedMedicationRequest/ component1/ PORX_MT980040CA/ dosageInstruction/component2/dosageLine/moodCode</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1350,7 +1390,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s95"><Data ss:Type="String">If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended. For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.&#10;&#10;Implementors need to be aware that the medication codes utilized by the source DIS will likely come from the Clinical Drug CeRX value set (https://infocentral.infoway-inforoute.ca/extra/ns/cerx43-html/html/vocabulary.html?type=vs&amp;id=ClinicalDrug) which draws in codes from various other code systems (HC-DIN, HC-NPN, HC-AIGC, etc.). There is currently no equivilant FHIR value set that supports this superset to recommend when binding.</Data><NamedCell
+    <Cell ss:StyleID="s96"><Data ss:Type="String">If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended. For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.&#10;&#10;Implementors need to be aware that the medication codes utilized by the source DIS will likely come from the Clinical Drug CeRX value set (https://infocentral.infoway-inforoute.ca/extra/ns/cerx43-html/html/vocabulary.html?type=vs&amp;id=ClinicalDrug) which draws in codes from various other code systems (HC-DIN, HC-NPN, HC-AIGC, etc.). There is currently no equivalent FHIR value set that supports this superset to recommend when binding.&#10;Implementors need to be aware that the medication codes utilized by the source DIS will likely come from the Clinical Drug CeRX value set (https://infocentral.infoway-inforoute.ca/extra/ns/cerx43-html/html/vocabulary.html?type=vs&amp;id=ClinicalDrug) which draws in codes from various other code systems (HC-DIN, HC-NPN, HC-AIGC, etc.). There is currently no equivalent FHIR value set that supports this superset to recommend when binding.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s96"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><Data ss:Type="String">PORX_IN020190CA/PORX_MT020070CA/medicationDispense/component3/supplyEvent/product/COCT_MT220200CA/medication/player</Data><NamedCell
@@ -1492,7 +1532,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">SME Note: While this is allowed as optional and the CeRX specification supports the mappable data element, it is unlikely to be frequently populated since most prescribers don't specify who should administer or what their role is.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s96"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s98"><Data ss:Type="String">PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/component3/suppyRequest/location/COCT_MT240003CA/serviceDeliveryLocation/id  OR  PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/fulfillment1/medicationDispense/performer/COCT_MT090107CA/assignedPerson/id</Data><NamedCell
@@ -1596,7 +1637,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">SME Note: The frequency in which insurance is recorded in CeRX messages is unclear but the specification supports it.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s96"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/coverage/coverage/id</Data><NamedCell
@@ -1820,7 +1862,8 @@
     <Cell ss:StyleID="s92"><Data ss:Type="String">MedicationRequest.dosageInstruction.text</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s90"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">1..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><Data ss:Type="String">string</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2008,7 +2051,7 @@
     <Cell ss:StyleID="s90"><Data ss:Type="String">Intended dispenser</Data></Cell>
     <Cell ss:StyleID="s90"/>
     <Cell ss:StyleID="s90"/>
-    <Cell ss:StyleID="s90"/>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">SME Note: This element would indicate where the prescriber expects the prescription to be dispensed. &#10;Sometimes useful for the clinician and patient to know, but should be confirmed with end-users.</Data></Cell>
     <Cell ss:StyleID="s90"/>
     <Cell ss:StyleID="s90"/>
     <Cell ss:StyleID="s98"><Data ss:Type="String">PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/component3/supplyRequest/location/COCT_MT240003CA/serviceDeliveryLocation/id</Data></Cell>
@@ -2064,7 +2107,7 @@
     <Cell ss:StyleID="s90"><Data ss:Type="String">Whether substitution is allowed or not</Data></Cell>
     <Cell ss:StyleID="s90"/>
     <Cell ss:StyleID="s90"/>
-    <Cell ss:StyleID="s90"/>
+    <Cell ss:StyleID="s183"><Data ss:Type="String">Mapping Note: CeRX has two ways of expressing substitution permission. If it's not allowed, a boolean &quot;false&quot; response for negationInd will be present. If it is allowed substitutionPermission.code will default to &quot;G&quot; which is a codeableconcept ties to the Act Code System. </Data></Cell>
     <Cell ss:StyleID="s90"/>
     <Cell ss:StyleID="s90"/>
     <Cell ss:StyleID="s98"><Data ss:Type="String">PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/subjectOf5/substitutionPermission/code OR PORX_IN060260CA/PORX_MT060340CA/combinedMedicationRequest/subjectOf5/substitutionPermission/negationInd</Data></Cell>
@@ -2338,12 +2381,13 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>6</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>20</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2355,19 +2399,17 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>25</ActiveRow>
-     <ActiveCol>3</ActiveCol>
-     <RangeSelection>R26C4:R31C4</RangeSelection>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
-  <AutoFilter x:Range="R1C1:R21C26"
+  <AutoFilter x:Range="R1C1:R22C26"
    xmlns="urn:schemas-microsoft-com:office:excel">
   </AutoFilter>
  </Worksheet>
@@ -6285,7 +6327,7 @@
    <Column ss:StyleID="s131" ss:AutoFitWidth="0" ss:Width="275"/>
    <Column ss:StyleID="s131" ss:Width="51"/>
    <Column ss:StyleID="s131" ss:Width="68"/>
-   <Column ss:StyleID="s131" ss:Width="146"/>
+   <Column ss:StyleID="s131" ss:AutoFitWidth="0" ss:Width="229"/>
    <Column ss:StyleID="s131" ss:Width="173"/>
    <Column ss:StyleID="s131" ss:AutoFitWidth="0" ss:Width="98"/>
    <Column ss:StyleID="s131" ss:AutoFitWidth="0" ss:Width="89"/>
@@ -6663,8 +6705,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>14</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

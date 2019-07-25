@@ -159,7 +159,7 @@
       <reference>
         <reference value="DiagnosticReport/diagnosticreport-gen-pat-example"/>
       </reference>
-      <name value="ACCESS-DiagnosticReport"/>
+      <name value="ACCESS-DiagnosticReport-Example"/>
       <description value="FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile "/>
       <exampleCanonical value="StructureDefinition/access-diagnosticreport-gen-pat"/>
       <groupingId value="examples"/>
@@ -168,9 +168,18 @@
       <reference>
         <reference value="MedicationDispense/medicationdispense-clin-example"/>
       </reference>
-      <name value="ACCESS-MedicationDispense"/>
+      <name value="ACCESS-MedicationDispense-Example"/>
       <description value="FHIR example of a MedicationDispense resource that is conformant to the ACCESS MedicationDispense Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
       <exampleCanonical value="StructureDefinition/access-medicationdispense-clin"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medicationrequest-clin-example"/>
+      </reference>
+      <name value="ACCESS-MedicationRequest-Example"/>
+      <description value="FHIR example of a MedicationRequest resource that is conformant to the ACCESS MedicationRequest Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+      <exampleCanonical value="StructureDefinition/access-medicationrequest-clin"/>
       <groupingId value="examples"/>
     </resource>
     <resource>

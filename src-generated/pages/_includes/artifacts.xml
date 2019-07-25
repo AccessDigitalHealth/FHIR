@@ -77,16 +77,23 @@
                 <tr>
                     <td style="column-width:30%">
                         <a href="diagnosticreport-gen-pat-example.html">
-                        •  ACCESS-DiagnosticReport</a>
+                        •  ACCESS-DiagnosticReport-Example</a>
                     </td>
                     <td>FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile </td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
                         <a href="medicationdispense-clin-example.html">
-                        •  ACCESS-MedicationDispense</a>
+                        •  ACCESS-MedicationDispense-Example</a>
                     </td>
                     <td>FHIR example of a MedicationDispense resource that is conformant to the ACCESS MedicationDispense Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from.</td>
+                </tr>
+                <tr>
+                    <td style="column-width:30%">
+                        <a href="medicationrequest-clin-example.html">
+                        •  ACCESS-MedicationRequest-Example</a>
+                    </td>
+                    <td>FHIR example of a MedicationRequest resource that is conformant to the ACCESS MedicationRequest Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from.</td>
                 </tr>
                 <tr>
                     <td style="column-width:30%">
