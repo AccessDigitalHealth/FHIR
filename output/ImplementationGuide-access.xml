@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="access"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AccessHealth</h2><p>The official URL for this implementation guide is: </p><pre>http://infoway-inforoute.ca/fhir/ImplementationGuide/access</pre><div><p>Provides an initial set of FHIR requirements based on mappings of jurisdictional data sources for the Access Health project.</p>
+</div></div>
+  </text>
+  <url value="http://infoway-inforoute.ca/fhir/ImplementationGuide/access"/>
+  <version value="0.1.0"/>
+  <name value="AccessHealth"/>
+  <title value="Access Health FHIR Requirements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Canada Health Infoway"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://infoway-inforoute.ca"/>
+    </telecom>
+  </contact>
+  <description value="Provides an initial set of FHIR requirements based on mappings of jurisdictional data sources for the Access Health project."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CA"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="ca.infoway-inforoute.access.initial"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="profiles">
+      <name value="Profiles"/>
+      <description value="Constraints on FHIR resources to be adhered to as part of the ACCESS implementation guide"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the ACCESS profiles"/>
+    </grouping>
+    <grouping id="observation-gen-pat-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health Observation (General Labs Patient)"/>
+    </grouping>
+    <grouping id="diagnosticreport-gen-pat-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health Diagnostic Report (General Labs Patient)"/>
+    </grouping>
+    <grouping id="medicationdispense-pat-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health MedicationDispense (Patient)"/>
+    </grouping>
+    <grouping id="medicationdispense-clin-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health MedicationDispense (Clinician)"/>
+    </grouping>
+    <grouping id="medicationrequest-clin-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health MedicationRequest (Clinician)"/>
+    </grouping>
+    <grouping id="medicationrequest-pat-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health MedicationRequest (Patient)"/>
+    </grouping>
+    <grouping id="medicationstatement-pat-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health MedicationStatement (Patient)"/>
+    </grouping>
+    <grouping id="medicationstatement-clin-access-profile-spreadsheet.xml">
+      <name value="ACCESS Health MedicationStatement (Clinician)"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="diagnosticreport-gen-pat-example.html"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-gen-pat-example"/>
+      </reference>
+      <name value="ACCESS-DiagnosticReport-Example"/>
+      <description value="FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile "/>
+      <exampleCanonical value="StructureDefinition/access-diagnosticreport-gen-pat"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="medicationdispense-clin-example.html"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/medicationdispense-clin-example"/>
+      </reference>
+      <name value="ACCESS-MedicationDispense-Example"/>
+      <description value="FHIR example of a MedicationDispense resource that is conformant to the ACCESS MedicationDispense Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+      <exampleCanonical value="StructureDefinition/access-medicationdispense-clin"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medicationrequest-clin-example"/>
+      </reference>
+      <name value="ACCESS-MedicationRequest-Example"/>
+      <description value="FHIR example of a MedicationRequest resource that is conformant to the ACCESS MedicationRequest Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+      <exampleCanonical value="StructureDefinition/access-medicationrequest-clin"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="medicationstatement-clin-example.html"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/medicationstatement-clin-example"/>
+      </reference>
+      <name value="ACCESS-MedicationStatement"/>
+      <description value="FHIR example of a MedicationStatement resource that is conformant to the ACCESS MedicationStatement Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from."/>
+      <exampleCanonical value="StructureDefinition/access-medicationstatement-clin"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="observation-gen-pat-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-gen-pat-example"/>
+      </reference>
+      <name value="ACCESS-Observation"/>
+      <description value="FHIR example of an Observation resource that is conformant to the ACCESS Observation general lab patient-focused profile."/>
+      <exampleCanonical value="StructureDefinition/access-observation-gen-pat"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-observation-gen-pat.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-observation-gen-pat"/>
+      </reference>
+      <name value="AccessObservationGeneralLabPatient"/>
+      <groupingId value="observation-gen-pat-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-diagnosticreport-gen-pat.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-diagnosticreport-gen-pat"/>
+      </reference>
+      <name value="AccessDiagnosticReportGeneralLabPatient"/>
+      <groupingId value="diagnosticreport-gen-pat-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-medicationdispense-pat.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationdispense-pat"/>
+      </reference>
+      <name value="AccessMedicationDispense-Pat"/>
+      <groupingId value="medicationdispense-pat-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-medicationdispense-clin.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationdispense-clin"/>
+      </reference>
+      <name value="AccessMedicationDispense-Clin"/>
+      <groupingId value="medicationdispense-clin-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-medicationrequest-clin.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationrequest-clin"/>
+      </reference>
+      <name value="AccessMedicationRequest-Clin"/>
+      <groupingId value="medicationrequest-clin-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-medicationrequest-pat.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationrequest-pat"/>
+      </reference>
+      <name value="AccessMedicationRequest-Pat"/>
+      <groupingId value="medicationrequest-pat-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-medicationstatement-pat.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationstatement-pat"/>
+      </reference>
+      <name value="AccessMedicationStatement-Pat"/>
+      <groupingId value="medicationstatement-pat-access-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="access-medicationstatement-clin.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-medicationstatement-clin"/>
+      </reference>
+      <name value="AccessMedicationStatement-Clin"/>
+      <groupingId value="medicationstatement-clin-access-profile-spreadsheet.xml"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="ACCESS Home Page"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="access-observation-gen-pat.html"/>
+          <title value="General Lab Observation"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-diagnosticreport-gen-pat.html"/>
+          <title value="General Lab DiagnosticReport"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-medicationdispense-pat.html"/>
+          <title value="Medication Dispense (Patient)"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-medicationdispense-clin.html"/>
+          <title value="Medication Dispense (Clinician)"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-medicationrequest-pat.html"/>
+          <title value="Medication Request (Patient)"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-medicationrequest-clin.html"/>
+          <title value="Medication Request (Clinician)"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-medicationstatement-pat.html"/>
+          <title value="Medication Statement (Patient)"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="access-medicationstatement-clin.html"/>
+          <title value="Medication Statement (Clinician)"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="diagnosticreport-gen-pat-example.html"/>
+          <title value="ACCESS-DiagnosticReport-Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="medicationdispense-clin-example.html"/>
+          <title value="ACCESS-MedicationDispense-Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrequest-clin-example.html"/>
+          <title value="ACCESS-MedicationRequest-Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="medicationstatement-clin-example.html"/>
+          <title value="ACCESS-MedicationStatement"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="observation-gen-pat-example.html"/>
+          <title value="ACCESS-Observation"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

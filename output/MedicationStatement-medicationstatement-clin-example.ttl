@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/MedicationStatement/medicationstatement-clin-example> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medicationstatement-clin-example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medicationstatement-clin-example</p><p><b>identifier</b>: 123456789</p><p><b>status</b>: active</p><p><b>medication</b>: APO-AMOXI PWR FOR SUSP 250MG/5ML <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/NamingSystem/ca-hc-din code '00628158' = '00628158', given as 'APO-AMOXI PWR FOR SUSP 250MG/5ML'})</span></p><p><b>subject</b>: <a href=\"Patient/00012346\">Patient/00012346</a></p><p><b>effective</b>: Jan 1, 2006, 12:00:00 AM</p><p><b>dateAsserted</b>: Jan 1, 2005, 8:20:01 AM</p><p><b>informationSource</b>: <a href=\"Practitioner/123456\">Practitioner/123456</a></p><p><b>reasonCode</b>: Acute bilateral otitis media (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '194290005' = 'Acute bilateral otitis media', given as 'Acute bilateral otitis media (disorder)'})</span></p><p><b>dosage</b>: </p></div>"
+  ];
+  fhir:MedicationStatement.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "123456789" ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/NamingSystem/ca-hc-din" ];
+       fhir:Coding.code [ fhir:value "00628158" ];
+       fhir:Coding.display [ fhir:value "APO-AMOXI PWR FOR SUSP 250MG/5ML" ]
+     ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://infoway-inforoute.ca/fhir/Patient/00012346>;
+     fhir:Reference.reference [ fhir:value "Patient/00012346" ]
+  ];
+  fhir:MedicationStatement.effectiveDateTime [ fhir:value "2006-01-01"^^xsd:date];
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2005-01-01T10:20:01-03:00"^^xsd:dateTime];
+  fhir:MedicationStatement.informationSource [
+     fhir:link <http://infoway-inforoute.ca/fhir/Practitioner/123456>;
+     fhir:Reference.reference [ fhir:value "Practitioner/123456" ]
+  ];
+  fhir:MedicationStatement.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:194290005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "194290005" ];
+       fhir:Coding.display [ fhir:value "Acute bilateral otitis media (disorder)" ]
+     ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "Take 5 mL three times daily until finished." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/MedicationStatement/medicationstatement-clin-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

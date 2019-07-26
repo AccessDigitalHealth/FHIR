@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-gen-pat-example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation-gen-pat-example</p><p><b>identifier</b>: CBR2016ET0109:IA00002-R400.5000</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'Laboratory'})</span></p><p><b>code</b>: THYROID STIMULATING HORMONE <span style="background: LightGoldenRodYellow">(Details : {[not stated] code '400.5000' = '400.5000', given as 'THYROID STIMULATING HORMONE'})</span></p><p><b>subject</b>: <a href="Patient/CB00350415">David Lab</a></p><p><b>effective</b>: Sep 1, 2016, 2:14:00 PM</p><p><b>value</b>: 1.60 mIU/L</p><p><b>interpretation</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'N' = 'Normal', given as 'Normal'})</span></p><p><b>specimen</b>: <a href="Specimen/CBR2016ET0109:IA00002R">Specimen/CBR2016ET0109:IA00002R</a></p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>AppliesTo</b></td><td><b>Text</b></td></tr><tr><td>*</td><td>An age-based population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0080 code 'A' = 'An age-based population', given as 'An age-based population'})</span></td><td>0.3-5</td></tr></table></div>
+  </text>
+  <identifier>
+    <value value="CBR2016ET0109:IA00002-R400.5000"/>
+  </identifier>
+  <status value="final"/>
+<!-- NOTE:For this profile, category will always be set to laboratory -->
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <code value="400.5000"/>
+      <display value="THYROID STIMULATING HORMONE"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/CB00350415"/>
+    <display value="David Lab"/>
+  </subject>
+<!--  NOTE: The HL7 v2 messages from NS Meditech C/S do not specify seconds and timezone,
+   timezone is a requirement if using the DateTime data type so it's been manually added to this example
+    using the time zone (-4:00 GMT) that is associated with the lab facility's address -->
+  <effectiveDateTime value="2016-09-01T14:14:00-04:00"/>
+<!--  NOTE: This example is for NS Meditech CS which does not have an available mapping for performing practitioner or performing organization
+  <performer>
+    <reference value="Organization/"/>
+    <display value="XYZ Lab"/>
+  </performer>  -->
+  <valueQuantity>
+    <value value="1.60"/>
+    <unit value="mIU/L"/>
+    <system value="http://unitsofmeasure.org"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <specimen>
+    <reference value="Specimen/CBR2016ET0109:IA00002R"/>
+  </specimen>
+<!--   NOTE: This example demonstrates using the reference range text element for stuff that is
+   not easily structured !    -->
+  <referenceRange>
+    <appliesTo>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0080"/>
+        <code value="A"/>
+        <display value="An age-based population"/>
+      </coding>
+    </appliesTo>
+    <appliesTo>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0080"/>
+        <code value="S"/>
+        <display value="A sex-based population"/>
+      </coding>
+    </appliesTo>
+    <text value="0.3-5"/>
+  </referenceRange>
+</Observation>

@@ -1,0 +1,105 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "diagnosticreport-gen-pat-example",
+  "meta": {
+    "profile": [
+      "http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticreport-gen-pat"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p>\n        <p> <b> id</b> : diagnosticreport-general-lab-profile-example</p> <p> <b> identifier</b> : 00003073-L4335^IWK20173001:C00003R</p> <p> <b> status</b> : final</p>\n        <p> <b> category</b> : laboratory test <span> (Details : {http://terminology.hl7.org/CodeSystem/v2-0074 code 'LAB' = 'Laboratory')</span> </p>\n        <p> <b> code</b> : Comprehensive Metabolic Panel <span> (Details : {http://MeditechMagic.org/CodeSystem/RequisitionNumbers code '00003073' = 'Comprehensive Metabolic Panel, given as 'Comprehensive Metabolic Panel'})</span> </p>\n        <p> <b> subject</b> : <a> Daisy Duck</a> </p>  <p> <b> effectiveDateTime</b> : 01/30/2017 10:00:00 AM</p> <p> <b> issued</b> : 01/30/2017 10:48:00 AM</p>\n        <p> <b> performer</b> : <a> Meditech Main Lab</a> </p> <p> <b> specimen</b> : <a> Specimen/IWK20173001:C00003R</a> </p>\n        <p> <b> result</b> : </p> <ul> <li> <a> Observation/IWK20173001:C00003R^112.0000</a> </li> <li> <a> Observation/IWK20173001:C00003R-114.0200</a> </li>\n        <li> <a> Observation/IWK20173001:C00003R-114.0700</a> </li> <li> <a> Observation/IWK20173001:C00003R-114.1100</a> </li> <li> <a> Observation/IWK20173001:C00003R-116.0200</a> </li>\n        <li> <a> Observation/IWK20173001:C00003R-119.0800</a> </li> <li> <a> Observation/IWK20173001:C00003R-122.0100</a> </li> <li> <a> Observation/IWK20173001:C00003R-122.0200</a> </li>\n        <li> <a> Observation/IWK20173001:C00003R-132.0100</a> </li> <li> <a> Observation/IWK20173001:C00003R-132.0200</a> </li> <li> <a> Observation/IWK20173001:C00003R-141.0600</a> </li>\n        <li> <a> Observation/IWK20173001:C00003R-141.0700</a> </li> <li> <a> Observation/IWK20173001:C00003R-165.3800</a> </li> <li> <a> Observation/IWK20173001:C00003R-165.7400</a> </li></ul>\n        </div>"
+  },
+  "identifier": [
+    {
+      "value": "00003073-L4335^IWK20173001:C00003R"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/req"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://MeditechMagic.org/CodeSystem/RequisitionNumbers",
+        "code": "00003073",
+        "display": "Comprehensive Metabolic Panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/K08000050",
+    "display": "Daisy Duck"
+  },
+  "effectiveDateTime": "2017-01-30T10:00:00-04:00",
+  "issued": "2017-01-30T10:48:00-04:00",
+  "performer": [
+    {
+      "reference": "Organization/ML001",
+      "display": "Meditech Main Lab"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/IWK20173001:C00003R"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/IWK20173001:C00003R-112.0000"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-114.0200"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-114.0700"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-114.1100"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-116.0200"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-119.0800"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-122.0100"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-122.0200"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-132.0100"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-132.0200"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-141.0600"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-141.0700"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-165.3800"
+    },
+    {
+      "reference": "Observation/IWK20173001:C00003R-165.7400"
+    }
+  ]
+}

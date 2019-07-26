@@ -1,0 +1,147 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "medicationdispense-clin-example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medicationdispense-clin-example</p><p><b>contained</b>: </p><p><b>identifier</b>: 987654321</p><p><b>status</b>: completed</p><p><b>medication</b>: ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet) <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/NamingSystem/ca-hc-din code '02466821' = '02466821', given as 'ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)'})</span></p><p><b>subject</b>: <a href=\"Patient/999999999\">Patient/999999999</a></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/888888\">Practitioner/888888</a></td></tr></table><p><b>location</b>: <a href=\"Location/123445\">Location/123445</a></p><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest/222222\">MedicationRequest/222222</a></p><p><b>type</b>: First Fill <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'FF' = 'FF', given as 'First Fill'})</span></p><p><b>quantity</b>: 250 mg</p><p><b>daysSupply</b>: 30 d</p><p><b>dosageInstruction</b>: </p><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>WasSubstituted</b></td><td><b>Type</b></td><td><b>Reason</b></td><td><b>ResponsibleParty</b></td></tr><tr><td>*</td><td>false</td><td>N <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'N' = 'N)</span></td><td>Out of Stock <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'OS' = 'OS', given as 'Out of Stock'})</span></td><td><a href=\"Practitioner/2356\">Practitioner/2356</a></td></tr></table></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "DetectedIssue",
+      "id": "#detectedIssue2354",
+      "status": "unknown",
+      "detail": "The patient has an intolerance to iron oxide found in Almotriptan malate 6.25mg",
+      "mitigation": [
+        {
+          "action": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "5"
+              }
+            ]
+          },
+          "date": "2003-12-01T10:01:01-03:00",
+          "author": {
+            "reference": "Practitioner/555555",
+            "display": "Tech Timmy"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "value": "987654321"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/NamingSystem/ca-hc-din",
+        "code": "02466821",
+        "display": "ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/999999999"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/888888"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/123445"
+  },
+  "authorizingPrescription": [
+    {
+      "reference": "MedicationRequest/222222"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "FF",
+        "display": "First Fill"
+      }
+    ]
+  },
+  "quantity": {
+    "value": 250,
+    "unit": "mg"
+  },
+  "daysSupply": {
+    "value": 30,
+    "unit": "d"
+  },
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "text": "Take 12.5 mg PO at onset; may repeat once after 2 hours. Not to exceed 25 mg/day. This medication is intended to address Migraines at onset. If you experience Migraines for more than 10 days/month, consult your doctor.",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2004-01-01",
+            "end": "2004-01-31"
+          }
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-GCRT",
+            "code": "3"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 6.25,
+            "unit": "mg"
+          }
+        }
+      ],
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 25,
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "day"
+        }
+      }
+    }
+  ],
+  "substitution": {
+    "wasSubstituted": false,
+    "type": {
+      "coding": [
+        {
+          "code": "N"
+        }
+      ]
+    },
+    "reason": [
+      {
+        "coding": [
+          {
+            "code": "OS",
+            "display": "Out of Stock"
+          }
+        ]
+      }
+    ],
+    "responsibleParty": [
+      {
+        "reference": "Practitioner/2356"
+      }
+    ]
+  }
+}

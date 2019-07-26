@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/Observation/observation-gen-pat-example> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-gen-pat-example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation-gen-pat-example</p><p><b>identifier</b>: CBR2016ET0109:IA00002-R400.5000</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'Laboratory'})</span></p><p><b>code</b>: THYROID STIMULATING HORMONE <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '400.5000' = '400.5000', given as 'THYROID STIMULATING HORMONE'})</span></p><p><b>subject</b>: <a href=\"Patient/CB00350415\">David Lab</a></p><p><b>effective</b>: Sep 1, 2016, 2:14:00 PM</p><p><b>value</b>: 1.60 mIU/L</p><p><b>interpretation</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'N' = 'Normal', given as 'Normal'})</span></p><p><b>specimen</b>: <a href=\"Specimen/CBR2016ET0109:IA00002R\">Specimen/CBR2016ET0109:IA00002R</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>AppliesTo</b></td><td><b>Text</b></td></tr><tr><td>*</td><td>An age-based population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0080 code 'A' = 'An age-based population', given as 'An age-based population'})</span></td><td>0.3-5</td></tr></table></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "CBR2016ET0109:IA00002-R400.5000" ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ];
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "400.5000" ];
+       fhir:Coding.display [ fhir:value "THYROID STIMULATING HORMONE" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://infoway-inforoute.ca/fhir/Patient/CB00350415>;
+     fhir:Reference.reference [ fhir:value "Patient/CB00350415" ];
+     fhir:Reference.display [ fhir:value "David Lab" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2016-09-01T14:14:00-04:00"^^xsd:dateTime];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "1.60"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mIU/L" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ]
+  ];
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://infoway-inforoute.ca/fhir/Specimen/CBR2016ET0109:IA00002R>;
+     fhir:Reference.reference [ fhir:value "Specimen/CBR2016ET0109:IA00002R" ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.appliesTo [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0080" ];
+         fhir:Coding.code [ fhir:value "A" ];
+         fhir:Coding.display [ fhir:value "An age-based population" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0080" ];
+         fhir:Coding.code [ fhir:value "S" ];
+         fhir:Coding.display [ fhir:value "A sex-based population" ]
+       ]
+     ];
+     fhir:Observation.referenceRange.text [ fhir:value "0.3-5" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/Observation/observation-gen-pat-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

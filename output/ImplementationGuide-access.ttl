@@ -1,0 +1,369 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/ImplementationGuide/access> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "access"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AccessHealth</h2><p>The official URL for this implementation guide is: </p><pre>http://infoway-inforoute.ca/fhir/ImplementationGuide/access</pre><div><p>Provides an initial set of FHIR requirements based on mappings of jurisdictional data sources for the Access Health project.</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://infoway-inforoute.ca/fhir/ImplementationGuide/access"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "AccessHealth"];
+  fhir:ImplementationGuide.title [ fhir:value "Access Health FHIR Requirements"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ImplementationGuide.publisher [ fhir:value "Canada Health Infoway"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://infoway-inforoute.ca" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Provides an initial set of FHIR requirements based on mappings of jurisdictional data sources for the Access Health project."];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CA" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "ca.infoway-inforoute.access.initial"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.0";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.grouping [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "profiles" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Profiles" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Constraints on FHIR resources to be adhered to as part of the ACCESS implementation guide" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "examples" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Example(s)" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Example(s) showing the use of the ACCESS profiles" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "observation-gen-pat-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health Observation (General Labs Patient)" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "diagnosticreport-gen-pat-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health Diagnostic Report (General Labs Patient)" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "medicationdispense-pat-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health MedicationDispense (Patient)" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "medicationdispense-clin-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health MedicationDispense (Clinician)" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "medicationrequest-clin-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health MedicationRequest (Clinician)" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "medicationrequest-pat-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health MedicationRequest (Patient)" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "medicationstatement-pat-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health MedicationStatement (Patient)" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "medicationstatement-clin-access-profile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "ACCESS Health MedicationStatement (Clinician)" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "diagnosticreport-gen-pat-example.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/DiagnosticReport/diagnosticreport-gen-pat-example>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnosticreport-gen-pat-example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ACCESS-DiagnosticReport-Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR example of a Diagnostic Report resource that is conformant to the ACCESS general lab DiagnosticReport profile " ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "StructureDefinition/access-diagnosticreport-gen-pat";
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticreport-gen-pat>
+       ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "medicationdispense-clin-example.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/MedicationDispense/medicationdispense-clin-example>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/medicationdispense-clin-example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ACCESS-MedicationDispense-Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR example of a MedicationDispense resource that is conformant to the ACCESS MedicationDispense Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "StructureDefinition/access-medicationdispense-clin";
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationdispense-clin>
+       ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/MedicationDispense/medicationrequest-clin-example>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/medicationrequest-clin-example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ACCESS-MedicationRequest-Example" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR example of a MedicationRequest resource that is conformant to the ACCESS MedicationRequest Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "StructureDefinition/access-medicationrequest-clin";
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationrequest-clin>
+       ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "medicationstatement-clin-example.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/MedicationStatement/medicationstatement-clin-example>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/medicationstatement-clin-example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ACCESS-MedicationStatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR example of a MedicationStatement resource that is conformant to the ACCESS MedicationStatement Clinician-Focused profile. This example also includes a commented out CeRX PORX_IN060220CA message that the values were mapped from." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "StructureDefinition/access-medicationstatement-clin";
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationstatement-clin>
+       ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "observation-gen-pat-example.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/Observation/observation-gen-pat-example>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-gen-pat-example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ACCESS-Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR example of an Observation resource that is conformant to the ACCESS Observation general lab patient-focused profile." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "StructureDefinition/access-observation-gen-pat";
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-observation-gen-pat>
+       ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "examples" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-observation-gen-pat.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-observation-gen-pat>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-observation-gen-pat" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessObservationGeneralLabPatient" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "observation-gen-pat-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-diagnosticreport-gen-pat.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-diagnosticreport-gen-pat>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-diagnosticreport-gen-pat" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessDiagnosticReportGeneralLabPatient" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "diagnosticreport-gen-pat-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-medicationdispense-pat.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationdispense-pat>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-medicationdispense-pat" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessMedicationDispense-Pat" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "medicationdispense-pat-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-medicationdispense-clin.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationdispense-clin>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-medicationdispense-clin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessMedicationDispense-Clin" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "medicationdispense-clin-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-medicationrequest-clin.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationrequest-clin>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-medicationrequest-clin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessMedicationRequest-Clin" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "medicationrequest-clin-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-medicationrequest-pat.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationrequest-pat>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-medicationrequest-pat" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessMedicationRequest-Pat" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "medicationrequest-pat-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-medicationstatement-pat.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationstatement-pat>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-medicationstatement-pat" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessMedicationStatement-Pat" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "medicationstatement-pat-access-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "access-medicationstatement-clin.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://infoway-inforoute.ca/fhir/StructureDefinition/access-medicationstatement-clin>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/access-medicationstatement-clin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessMedicationStatement-Clin" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "medicationstatement-clin-access-profile-spreadsheet.xml" ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "ACCESS Home Page" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "artifacts.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Artifact List" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-observation-gen-pat.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "General Lab Observation" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-diagnosticreport-gen-pat.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "General Lab DiagnosticReport" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-medicationdispense-pat.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Dispense (Patient)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-medicationdispense-clin.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Dispense (Clinician)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-medicationrequest-pat.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Request (Patient)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 5;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-medicationrequest-clin.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Request (Clinician)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 6;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-medicationstatement-pat.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Statement (Patient)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 7;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "access-medicationstatement-clin.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Statement (Clinician)" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 8;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "diagnosticreport-gen-pat-example.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "ACCESS-DiagnosticReport-Example" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 9;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationdispense-clin-example.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "ACCESS-MedicationDispense-Example" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 10;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrequest-clin-example.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "ACCESS-MedicationRequest-Example" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 11;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationstatement-clin-example.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "ACCESS-MedicationStatement" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 12;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "observation-gen-pat-example.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "ACCESS-Observation" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/ImplementationGuide/access.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

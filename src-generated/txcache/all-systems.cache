@@ -53,3 +53,12 @@ v: {
   "error" : "The code system \"\" is not known for the code \"PSY\"; The code provided (#PSY) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ALGAlT"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"ALGAlT\"; The code provided (#ALGAlT) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/MedicationDispense/medicationdispense-clin-example> a fhir:MedicationDispense;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medicationdispense-clin-example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medicationdispense-clin-example</p><p><b>contained</b>: </p><p><b>identifier</b>: 987654321</p><p><b>status</b>: completed</p><p><b>medication</b>: ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet) <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/NamingSystem/ca-hc-din code '02466821' = '02466821', given as 'ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)'})</span></p><p><b>subject</b>: <a href=\"Patient/999999999\">Patient/999999999</a></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/888888\">Practitioner/888888</a></td></tr></table><p><b>location</b>: <a href=\"Location/123445\">Location/123445</a></p><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest/222222\">MedicationRequest/222222</a></p><p><b>type</b>: First Fill <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'FF' = 'FF', given as 'First Fill'})</span></p><p><b>quantity</b>: 250 mg</p><p><b>daysSupply</b>: 30 d</p><p><b>dosageInstruction</b>: </p><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>WasSubstituted</b></td><td><b>Type</b></td><td><b>Reason</b></td><td><b>ResponsibleParty</b></td></tr><tr><td>*</td><td>false</td><td>N <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'N' = 'N)</span></td><td>Out of Stock <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'OS' = 'OS', given as 'Out of Stock'})</span></td><td><a href=\"Practitioner/2356\">Practitioner/2356</a></td></tr></table></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:DetectedIssue;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "#detectedIssue2354" ];
+     fhir:DetectedIssue.status [ fhir:value "unknown" ];
+     fhir:DetectedIssue.detail [ fhir:value "The patient has an intolerance to iron oxide found in Almotriptan malate 6.25mg" ];
+     fhir:DetectedIssue.mitigation [
+       fhir:index 0;
+       fhir:DetectedIssue.mitigation.action [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+           fhir:Coding.code [ fhir:value "5" ]
+         ]
+       ];
+       fhir:DetectedIssue.mitigation.date [ fhir:value "2003-12-01T10:01:01-03:00"^^xsd:dateTime ];
+       fhir:DetectedIssue.mitigation.author [
+         fhir:link <http://infoway-inforoute.ca/fhir/Practitioner/555555>;
+         fhir:Reference.reference [ fhir:value "Practitioner/555555" ];
+         fhir:Reference.display [ fhir:value "Tech Timmy" ]
+       ]
+     ]
+  ];
+  fhir:MedicationDispense.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "987654321" ]
+  ];
+  fhir:MedicationDispense.status [ fhir:value "completed"];
+  fhir:MedicationDispense.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/NamingSystem/ca-hc-din" ];
+       fhir:Coding.code [ fhir:value "02466821" ];
+       fhir:Coding.display [ fhir:value "ALMOTRIPTAN (almotriptan (almotriptan malate) 12.5 mg oral tablet)" ]
+     ]
+  ];
+  fhir:MedicationDispense.subject [
+     fhir:link <http://infoway-inforoute.ca/fhir/Patient/999999999>;
+     fhir:Reference.reference [ fhir:value "Patient/999999999" ]
+  ];
+  fhir:MedicationDispense.performer [
+     fhir:index 0;
+     fhir:MedicationDispense.performer.actor [
+       fhir:link <http://infoway-inforoute.ca/fhir/Practitioner/888888>;
+       fhir:Reference.reference [ fhir:value "Practitioner/888888" ]
+     ]
+  ];
+  fhir:MedicationDispense.location [
+     fhir:link <http://infoway-inforoute.ca/fhir/Location/123445>;
+     fhir:Reference.reference [ fhir:value "Location/123445" ]
+  ];
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index 0;
+     fhir:link <http://infoway-inforoute.ca/fhir/MedicationRequest/222222>;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/222222" ]
+  ];
+  fhir:MedicationDispense.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "FF" ];
+       fhir:Coding.display [ fhir:value "First Fill" ]
+     ]
+  ];
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "250"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mg" ]
+  ];
+  fhir:MedicationDispense.daysSupply [
+     fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "d" ]
+  ];
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "Take 12.5 mg PO at onset; may repeat once after 2 hours. Not to exceed 25 mg/day. This medication is intended to address Migraines at onset. If you experience Migraines for more than 10 days/month, consult your doctor." ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsPeriod [
+           fhir:Period.start [ fhir:value "2004-01-01"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2004-01-31"^^xsd:date ]
+         ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-GCRT" ];
+         fhir:Coding.code [ fhir:value "3" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "6.25"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ]
+       ]
+     ];
+     fhir:Dosage.maxDosePerPeriod [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "25"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "day" ]
+       ]
+     ]
+  ];
+  fhir:MedicationDispense.substitution [
+     fhir:MedicationDispense.substitution.wasSubstituted [ fhir:value "false"^^xsd:boolean ];
+     fhir:MedicationDispense.substitution.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "N" ]
+       ]
+     ];
+     fhir:MedicationDispense.substitution.reason [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "OS" ];
+         fhir:Coding.display [ fhir:value "Out of Stock" ]
+       ]
+     ];
+     fhir:MedicationDispense.substitution.responsibleParty [
+       fhir:index 0;
+       fhir:link <http://infoway-inforoute.ca/fhir/Practitioner/2356>;
+       fhir:Reference.reference [ fhir:value "Practitioner/2356" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://infoway-inforoute.ca/fhir/MedicationDispense/medicationdispense-clin-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

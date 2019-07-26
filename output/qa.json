@@ -1,0 +1,12 @@
+﻿{
+  "url": "http://infoway-inforoute.ca/fhir/ImplementationGuide/access",
+  "name": "AccessHealth",
+  "package-id": "ca.infoway-inforoute.access.initial",
+  "ig-ver": "0.1.0",
+  "date": "Fri, 26 Jul, 2019 15:21:42 -0400",
+  "errs": 296,
+  "warnings": 34,
+  "hints": 2,
+  "version": "4.0.0",
+  "tool": "4.1.0 (3)"
+}
