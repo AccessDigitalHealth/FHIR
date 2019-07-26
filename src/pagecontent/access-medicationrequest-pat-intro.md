@@ -43,10 +43,10 @@ Additional evaluation and iteration of these profiles, as additional jurisdictio
 ### **Key differences from [MedicationRequest Base Resource](https://www.hl7.org/fhir/medicationrequest.html):**
 
 - Removed the following elements from the profile due to lack of available semantically equivalent CeRX fields across examined sites:
-  - intent, category, priority, doNotPerform, reported, encounter, supportingInformation, performerType, recorder, reasonReference, instantiatesCanonical, instantiatesUri, basedOn, groupIdentifier, authorReference, dosageInstruction sub-elements (additionalInstruction, patientInstruction, timing, site, route, method, doseAndRate, maxDosePerPeriod), dispenseRequest.initialFill, dispenseRequest.dispenseInterval, substitution.reason, eventHistory
+  - category, priority, doNotPerform, reported, encounter, supportingInformation, performerType, recorder, reasonReference, instantiatesCanonical, instantiatesUri, basedOn, groupIdentifier, authorReference, dosageInstruction sub-elements (additionalInstruction, patientInstruction, timing, site, route, method, doseAndRate, maxDosePerPeriod), dispenseRequest.initialFill, dispenseRequest.dispenseInterval, substitution.reason, eventHistory
 
 - Flagged the following elements as "Must Support":
-  - status, medication, subject, authoredOn, requester, dosageInstruction, dosageInstruction.text, dispenseRequest, dispenseRequest.numberOfRepeatsAllowed, dispenseRequest.quantity
+  - status, intent, medication, subject, authoredOn, requester, dosageInstruction, dosageInstruction.text, dispenseRequest, dispenseRequest.numberOfRepeatsAllowed, dispenseRequest.quantity
 
 - Changed the cardinality of the following elements:
   - *N/A - no cardinality changes*
@@ -76,7 +76,13 @@ Differences between the two profiles are largely due to a combination of this pr
 Differences between the two profiles are as follows:
 
 **Must Support Differences**
-- dispenseRequest (and some of its sub-elements) are flagged as Must Support for the ACCESS profile, but not US Core. Through reviews with SMEs, the importance of remaining fill information (that is part of the dispenseRequest) is both available given the source data (CeRX messages) and critical to both clinicians and patients.
+- intent is flagged as Must Support for the ACCESS profile, but not the US Core profile
+  - There isn't a 1:1 conversion between the values in CeRX and the values in the required MedicationRequest Intent value set
+  - This profile assumes that the FHIR resources generated from CeRX messages by Canadian Drug Information Systems that should be able to differentiate between whether the CeRX message type represents:
+    - an order (a request/demand and authorization for action),
+    - a plan(an intention to ensure something occurs without providing an authorization for others to act),
+    - or a proposal (suggestion made by someone/something that doesn't have an intention to ensure it occurs and without providing an authorization to act).  
+- dispenseRequest (and some of its sub-elements) are flagged as Must Support for the ACCESS profile, but not the US Core profile. Through reviews with SMEs, the importance of remaining fill information (that is part of the dispenseRequest) is both available given the source data (CeRX messages) and critical to both clinicians and patients.
 
 **Cardinality Constraint Differences**
 - US Core creates a lower cardinality constraint (1..1) on the authoredOn element and the requester element, which the ACCESS profiles do not inherit. Because at least one jurisdiction (New Brunswick) does not support Medication Request CeRX messages (prescription information has to be inferred from Medication Dispense CeRX messages), an authoredOn date and requesting practitioner is not guaranteed for every MedicationRequest that is transformed from CeRX source messages.

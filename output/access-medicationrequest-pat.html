@@ -207,12 +207,12 @@ Additional evaluation and iteration of these profiles, as additional jurisdictio
 <ul>
   <li>Removed the following elements from the profile due to lack of available semantically equivalent CeRX fields across examined sites:
     <ul>
-      <li>intent, category, priority, doNotPerform, reported, encounter, supportingInformation, performerType, recorder, reasonReference, instantiatesCanonical, instantiatesUri, basedOn, groupIdentifier, authorReference, dosageInstruction sub-elements (additionalInstruction, patientInstruction, timing, site, route, method, doseAndRate, maxDosePerPeriod), dispenseRequest.initialFill, dispenseRequest.dispenseInterval, substitution.reason, eventHistory</li>
+      <li>category, priority, doNotPerform, reported, encounter, supportingInformation, performerType, recorder, reasonReference, instantiatesCanonical, instantiatesUri, basedOn, groupIdentifier, authorReference, dosageInstruction sub-elements (additionalInstruction, patientInstruction, timing, site, route, method, doseAndRate, maxDosePerPeriod), dispenseRequest.initialFill, dispenseRequest.dispenseInterval, substitution.reason, eventHistory</li>
     </ul>
   </li>
   <li>Flagged the following elements as “Must Support”:
     <ul>
-      <li>status, medication, subject, authoredOn, requester, dosageInstruction, dosageInstruction.text, dispenseRequest, dispenseRequest.numberOfRepeatsAllowed, dispenseRequest.quantity</li>
+      <li>status, intent, medication, subject, authoredOn, requester, dosageInstruction, dosageInstruction.text, dispenseRequest, dispenseRequest.numberOfRepeatsAllowed, dispenseRequest.quantity</li>
     </ul>
   </li>
   <li>Changed the cardinality of the following elements:
@@ -252,7 +252,19 @@ Additional evaluation and iteration of these profiles, as additional jurisdictio
 
 <p><strong>Must Support Differences</strong></p>
 <ul>
-  <li>dispenseRequest (and some of its sub-elements) are flagged as Must Support for the ACCESS profile, but not US Core. Through reviews with SMEs, the importance of remaining fill information (that is part of the dispenseRequest) is both available given the source data (CeRX messages) and critical to both clinicians and patients.</li>
+  <li>intent is flagged as Must Support for the ACCESS profile, but not the US Core profile
+    <ul>
+      <li>There isn’t a 1:1 conversion between the values in CeRX and the values in the required MedicationRequest Intent value set</li>
+      <li>This profile assumes that the FHIR resources generated from CeRX messages by Canadian Drug Information Systems that should be able to differentiate between whether the CeRX message type represents:
+        <ul>
+          <li>an order (a request/demand and authorization for action),</li>
+          <li>a plan(an intention to ensure something occurs without providing an authorization for others to act),</li>
+          <li>or a proposal (suggestion made by someone/something that doesn’t have an intention to ensure it occurs and without providing an authorization to act).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>dispenseRequest (and some of its sub-elements) are flagged as Must Support for the ACCESS profile, but not the US Core profile. Through reviews with SMEs, the importance of remaining fill information (that is part of the dispenseRequest) is both available given the source data (CeRX messages) and critical to both clinicians and patients.</li>
 </ul>
 
 <p><strong>Cardinality Constraint Differences</strong></p>
@@ -987,7 +999,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://infoway-inforoute.ca"/>Canada Health Infoway</a>.  Package ca.infoway-inforoute.access.initial#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.0</a>. Generated <span title="Fri, Jul 26, 2019 15:21-0400">2019-07-26</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://infoway-inforoute.ca"/>Canada Health Infoway</a>.  Package ca.infoway-inforoute.access.initial#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.0</a>. Generated <span title="Fri, Jul 26, 2019 15:36-0400">2019-07-26</span>
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
