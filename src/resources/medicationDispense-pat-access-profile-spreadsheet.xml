@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>14600</WindowHeight>
-  <WindowWidth>26440</WindowWidth>
-  <WindowTopX>32767</WindowTopX>
-  <WindowTopY>4060</WindowTopY>
+  <WindowHeight>15020</WindowHeight>
+  <WindowWidth>26840</WindowWidth>
+  <WindowTopX>1580</WindowTopX>
+  <WindowTopY>1960</WindowTopY>
   <TabRatio>814</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
@@ -1104,7 +1104,7 @@
     <Cell ss:StyleID="s94"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s94"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s98"><Data ss:Type="String">Dispensing a medication to a named patient</Data><NamedCell
+    <Cell ss:StyleID="s98"><Data ss:Type="String">ACCESS MedicationDispense (Patient) Profile</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><Data ss:Type="String"> </Data><NamedCell
@@ -1694,7 +1694,6 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>3</ActiveRow>
      <ActiveCol>15</ActiveCol>
     </Pane>
    </Panes>

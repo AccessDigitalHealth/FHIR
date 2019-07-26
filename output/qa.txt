@@ -2,7 +2,7 @@
 =========================================
 
 err = 296, warn = 34, info = 2
-Generated Fri Jul 26 15:38:00 EDT 2019. FHIR version 4.0.0 for ca.infoway-inforoute.access.initial#0.1.0 (canonical = http://infoway-inforoute.ca/fhir)
+Generated Fri Jul 26 17:11:13 EDT 2019. FHIR version 4.0.0 for ca.infoway-inforoute.access.initial#0.1.0 (canonical = http://infoway-inforoute.ca/fhir)
 
  Build Errors : 37 / 1
  /Users/Sheridan/FHIR/src-generated/resources/access : 1 / 1
