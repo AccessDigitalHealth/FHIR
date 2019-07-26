@@ -499,7 +499,7 @@
       </mapping>
       <mapping>
         <identity value="prince-edward-island-cerx"/>
-        <map value="PORX_IN060400CA/PORX_MT060190CA/medicationRecord/combinedMedicationRequest/statusCodeTEST"/>
+        <map value="PORX_IN060400CA/PORX_MT060190CA/medicationRecord/combinedMedicationRequest/statusCode"/>
       </mapping>
       <mapping>
         <identity value="newfoundland-cerx"/>
@@ -1395,7 +1395,7 @@
       <isModifier value="false"/>
       <mapping>
         <identity value="prince-edward-island-cerx"/>
-        <map value="PORX_IN060400CA/PORX_MT060190CA/medicationRecord/combinedMedicationRequest/reason/PORX_MT980050CA/indications/observationDiagnosisTEST"/>
+        <map value="PORX_IN060400CA/PORX_MT060190CA/medicationRecord/combinedMedicationRequest/reason/PORX_MT980050CA/indications/observationDiagnosis"/>
       </mapping>
       <mapping>
         <identity value="newfoundland-cerx"/>
